@@ -1,0 +1,72 @@
+:root {
+	/* Primary */
+
+	--Red: hsl(0, 78%, 62%);
+	--Cyan: hsl(180, 62%, 55%);
+	--Orange: hsl(34, 97%, 64%);
+	--Blue: hsl(212, 86%, 64%);
+
+	/* Neutral */
+
+	--Very-Dark-Blue: hsl(234, 12%, 34%);
+	--Grayish-Blue: hsl(229, 6%, 66%);
+	--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+	display: flex;
+    flex-direction: row;
+	justify-content: center;
+	font-family: "Poppins", sans-serif;
+	font-size: 0.9rem;
+	color: var(--Very-Dark-Blue);
+    background-color: black;
+	flex-wrap: wrap;
+    min-height: 100vh;
+    max-height: max-content;
+	gap: 20px;
+	padding: 30px;
+    min-width: 100vw;
+    max-width: 100vw;
+}
+
+.feature-one {
+	border-top: 5px solid var(--Cyan);
+}
+.feature {
+	position: relative;
+	max-width: 21rem;
+	height: 15rem;
+	margin: 2rem auto;
+	padding: 2em;
+	border-radius: 0.75em;
+	box-shadow: 5px 5px 20px rgba(0 0 0/0.15);
+    background-color: white;
+	text-align: left;
+	transition: transform 200ms ease-in;
+}
+
+.feature__title{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.feature:hover {
+	transform: scale(1.03);
+}
+
+.feature__desc {
+	margin-top: 0.5em;
+	color: var(--Grayish-Blue);
+}
+
+.feature__img {
+	position: absolute;
+	bottom: 10%;
+	right: 10%;
+}
