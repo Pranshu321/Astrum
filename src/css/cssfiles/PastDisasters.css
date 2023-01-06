@@ -31,7 +31,7 @@
     max-height: max-content;
 	gap: 20px;
 	padding: 30px;
-    min-width: 100vw;
+    min-width: 98vw;
     max-width: 100vw;
 }
 
@@ -40,7 +40,7 @@
 }
 .feature {
 	position: relative;
-	max-width: 21rem;
+	width: 21rem;
 	height: 15rem;
 	margin: 2rem auto;
 	padding: 2em;
