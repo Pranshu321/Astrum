@@ -1,4 +1,4 @@
-.forms{
+.forms {
 	align-items: center;
 	background-color: #131515;
 	display: flex;
@@ -105,12 +105,12 @@
 }
 
 .submit {
-	background-color: #D4E162;
+	background-color: #d4e162;
 	border-radius: 12px;
 	border: 0;
 	box-sizing: border-box;
 	color: black;
-    font-weight: 700;
+	font-weight: 700;
 	cursor: pointer;
 	font-size: 18px;
 	height: 50px;
@@ -119,6 +119,8 @@
 	width: 100%;
 }
 
-.submit:active {
-	background-color: #06b;
+@media (max-width: 1024px) {
+	.form {
+		width: 87%;
+	}
 }

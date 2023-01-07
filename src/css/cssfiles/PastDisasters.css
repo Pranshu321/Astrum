@@ -32,15 +32,15 @@
 	gap: 20px;
 	padding: 30px;
     min-width: 98vw;
-    max-width: 100vw;
+    max-width: 98vw;
 }
 
 .feature-one {
-	border-top: 5px solid var(--Cyan);
+	border-top: 5px solid #94E8B4;
 }
 .feature {
 	position: relative;
-	width: 21rem;
+    width: 20rem;
 	height: 15rem;
 	margin: 2rem auto;
 	padding: 2em;
