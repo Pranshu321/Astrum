@@ -34,7 +34,12 @@ With the rapid change in climate and increasing global warming , quick response 
 
 We have a built Disaster Risk Management System for better management and collaboration during a natural or man-made disaster .Our web helps in prediction of upcoming natural threats using Nasa API, along with that we have integrated NGos , Police and local helpers on our platform for faster evacuation and relief work.
 
-Astrum provides the authorities a personalized dashboard with the track of the recent evacuations and Emergency requests everything in a dashboard works in a synchronous mannner. We also provide them the recent stats of the current disaster ongoing Injured , Deaths , Evacuated. As in the disaster finding the hospots is difficult so , we also help authorities to identify the hotspots and type of help needed there with accurate postion on google map , so that help can be provided them as soon as possible.
+  - Astrum provides the authorities a personalized dashboard with the track of the recent evacuations and Emergency requests everything which updates synchronously. 
+  - We update the recent stats no. of Injured , Deaths , Evacuated in the current disaster.
+  - Finding the hospots is difficult so , we also help authorities to identify the hotspots and type of help needed there for faster rescue /operation.
+  - We allow user location sharing (currently under development) to track people to rescue or in need of any kind of emergency help.
+  - Using Nasa API we can track the upcoming volcanoes /tropical storms. (we expand this feature to other natural calamities) 
+  - We can donate to the needy securely through our app.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -51,9 +56,6 @@ Astrum provides the authorities a personalized dashboard with the track of the r
 4. **Services**            : `Realm-Services` , `Google maps API ` , `Nasa API`
 
 5. **Deployment**          : `Netlify`
-
-6. **ML / DL Frameworks**  : `Pytorch`  `HuggingFace`  `Transformers` 
-
 
 
 <!-- GETTING STARTED -->
@@ -130,6 +132,19 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<!---IDEAS--->
+## Upcoming Ideas/ Improvements
+
+We have loads of Ideas for our web app , for the time being we have thought of a few!
+
+* Filtering about important tweets/ SOS during a calamity so that a need for help through social media doesnot go unnoticed! 
+* Currently we have the free version of Google API keys which restrict many map features, we plan to improve it in future!
+* Tracking more natural calamities 
+* Notifications
+* Improving the backend architecture of CRUD
+  
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 <!-- CONTACT -->
 ## Contact
 
@@ -141,18 +156,10 @@ Member 2 - [Mohammad Sami](https://github.com/MSamiDev)
 
 Member 3 - [Sreetama Ghosh Hazra](https://github.com/Sreetama2001)
 
-Project Link: [Astrum](astrum-hackit.netlify.app)
+Web APP : [Astrum]()
 
-Video Link : [Astrum](https://www.loom.com/share/d86cf7ca27c84faeb0ae4cba4dea2400)
+Video Link : [demo_video]()
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Crisis NLP , Public dataset for Twitter ](https://crisisnlp.qcri.org/lrec2016/lrec2016.html)
-* [Detailed Explanation Of Bert and Attention Model](https://docs.google.com/presentation/d/1R8PV1bEQqgApC2vYTMQhP0pXRvDjZ5qXnsOaLhyB31w/edit#slide=id.p)
-  
-<p align="right">(<a href="#top">back to top</a>)</p>
