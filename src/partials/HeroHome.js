@@ -109,7 +109,7 @@ function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay="300"
               >
-                {/* <div>
+                <div>
                   <Link
                     to={"/nasamap"}
                     className="btn text-black font-semibold mr-4 bg-gray-400 hover:bg-yell w-full mb-4 sm:w-auto sm:mb-0"
@@ -117,7 +117,7 @@ function HeroHome() {
                   >
                     Disaster Pridiction<small>-by nasa</small>
                   </Link>
-                </div> */}
+                </div>
                 <div>
                   <Link
                     to={"/help"}
