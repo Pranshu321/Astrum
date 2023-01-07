@@ -10,7 +10,7 @@ export default function Map() {
   const lng = useLocation().state.lng;
 
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyCu1YXEvttfZdCaxtYBSgcX7M1EKD5cdV0",
+    googleMapsApiKey: process.env.REACT_APP_GMAP_API,
   });
 
   const center = useMemo(() => ({ lat: lat, lng: lng }), []);

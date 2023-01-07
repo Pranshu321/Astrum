@@ -15,7 +15,7 @@ export default function NasaMap({ eventData }) {
 
   console.log("naana mao ", eventData);
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyCu1YXEvttfZdCaxtYBSgcX7M1EKD5cdV0",
+    googleMapsApiKey: process.env.REACT_APP_GMAP_API,
   });
   const markers = eventData.map((ev, index) => {
     return (
