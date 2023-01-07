@@ -1,70 +1,158 @@
-# Getting Started with Create React App
+# Astrum - Disaster Risk Reduction 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <a id="top" href="astrum-hackit.netlify.app" target="blank">
+    <img src="https://user-images.githubusercontent.com/73426684/201504342-08cffce2-5087-4a69-b0ec-b9fa0ad6f49b.png" width="100px" alt="">
+  </a>
 
-## Available Scripts
+  <h3 align="center">Astrum - Saves Lives</h3>
 
-In the project directory, you can run:
+  <p align="center">
+    <a href="https://astrum-hackit.netlify.app/" target="blank">Live Demo</a> |
+    <a href="https://github.com/Pranshu321/Astrum_Hackit/issues" target="blank">Report a Bug</a> |
+    <a href="https://github.com/Pranshu321/Astrum_Hackit/issues" target="blank">Suggest a Feature</a>
+  </p>
+</div>
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## The motivation:
+ 
+With the rapid change in climate and increasing global warming , quick response to a disaster saves a lot of lives. According to a report, climate change-induced natural disasters killed almost 3,000 people and 70,000 livestock, and destroyed around 4.1 lakh houses just this year alone. They also affected 18 lakh hectares of crop area — about 1% of the total cropped area in India . We studied that results can be a little worse off if we plan and manage effectively during a crisis. Hence we came up we an idea to build a Post and pre disaster management system.    
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- <img
+  src=""
+  alt="Alt text"
+  title="Optional title"
+  style="display: inline-block; margin: 0 auto; max-width: 300px"> -->
+  
+  <p align="right">(<a href="#top">back to top</a>)</p>
+  
+ ---
 
-### `npm test`
+## How it works :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+We have a built Disaster Risk Management System for better management and collaboration during a natural or man-made disaster .Our web helps in prediction of upcoming natural threats using Nasa API, along with that we have integrated NGos , Police and local helpers on our platform for faster evacuation and relief work.
 
-### `npm run build`
+Astrum provides the authorities a personalized dashboard with the track of the recent evacuations and Emergency requests everything in a dashboard works in a synchronous mannner. We also provide them the recent stats of the current disaster ongoing Injured , Deaths , Evacuated. As in the disaster finding the hospots is difficult so , we also help authorities to identify the hotspots and type of help needed there with accurate postion on google map , so that help can be provided them as soon as possible.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used :
 
-### `npm run eject`
+1. **Frontend frameworks** : `React` , `SASS` , `Tailwind CSS` , `react-router-dom` , `react-hot-toast`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Authenciation**       : `Firebase-Auth`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Database and storage**: `Firestore` , `MonngoDb`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Services**            : `Realm-Services` , `Google maps API ` , `Nasa API`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. **Deployment**          : `Netlify`
 
-## Learn More
+6. **ML / DL Frameworks**  : `Pytorch`  `HuggingFace`  `Transformers` 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+<!-- GETTING STARTED -->
+## Getting Started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### This is an example of how you may give instructions on setting up your project locally.To get a local copy up and running follow these simple example steps.
 
-### Analyzing the Bundle Size
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+_Below is an example of how you can instruct your audience on installing and setting up your app. This project doesn't rely on any external dependencies or services._
 
-### Making a Progressive Web App
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Pranshu321/Astrum_Hackit.git
+   ```
+2. Now install all npm packages.
+   ```sh
+    npm i 
+   ```
+   
+3. Now you have to define own firebase project config at `src/firebase.js`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+  ![image](https://user-images.githubusercontent.com/86917304/201507081-c0e7cc6b-4d3f-4d99-8611-1ddf98afcd3f.png)
 
-### Advanced Configuration
+4. After all steps defined above you can run command `npm start` to run application at `localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Let's do a walkthrough of our app
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Welcome to Astrum
+![image](https://user-images.githubusercontent.com/86917304/201508083-06daafa1-7ea1-44f8-9cb5-bb053a88c230.png)
+
+## Personalized Dashboard
+![image](https://user-images.githubusercontent.com/86917304/201508215-44348334-f62c-4d30-ad41-6283452e0da2.png)
+
+## Previous Disaster Information
+![image](https://user-images.githubusercontent.com/86917304/201508254-cb7c8a9e-3709-419d-a90a-ffe6b1a29650.png)
+
+## Tracking of Disasters 
+![image](https://user-images.githubusercontent.com/86917304/201508273-9e9969ba-4dcf-449a-8514-f6f613cc843c.png)
+
+## Donation for needy one
+![image](https://user-images.githubusercontent.com/86917304/201508333-c7485405-ef3c-4850-a4b2-177f78e5d498.png)
+
+## Features for Needy ones
+### Need Help form
+![image](https://user-images.githubusercontent.com/86917304/201508371-66709b0b-b2ba-4d95-9d33-0ba4f24dc9d6.png)
+
+### Emergency Help - (One click help , direct location sharing)
+![image](https://user-images.githubusercontent.com/86917304/201508392-3edda4b3-6fd6-4a4b-9bf9-a6900d06fd66.png)
+
+### Phone View
+![image](https://user-images.githubusercontent.com/86917304/201508184-86698777-c4b8-4314-84fc-2a61f517457d.png)
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+---
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- CONTACT -->
+## Contact
+
+Team Name - Hackit
+
+Leader  - [Pranshu Jain](mailto:pranshujain0111@gmail.com)
+
+Member 2 - [Mohammad Sami](https://github.com/MSamiDev)
+
+Member 3 - [Sreetama Ghosh Hazra](https://github.com/Sreetama2001)
+
+Project Link: [Astrum](astrum-hackit.netlify.app)
+
+Video Link : [Astrum](https://www.loom.com/share/d86cf7ca27c84faeb0ae4cba4dea2400)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+
+* [Crisis NLP , Public dataset for Twitter ](https://crisisnlp.qcri.org/lrec2016/lrec2016.html)
+* [Detailed Explanation Of Bert and Attention Model](https://docs.google.com/presentation/d/1R8PV1bEQqgApC2vYTMQhP0pXRvDjZ5qXnsOaLhyB31w/edit#slide=id.p)
+  
+<p align="right">(<a href="#top">back to top</a>)</p>
