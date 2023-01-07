@@ -66,6 +66,18 @@ h1 {
 	}
 }
 
+
+.toggle-checkbox:checked {
+	@apply: right-0 border-green-400;
+	right: 0;
+	border-color: #68D391;
+  }
+  .toggle-checkbox:checked + .toggle-label {
+	@apply: bg-green-400;
+	background-color: #68D391;
+  }
+
+  
 .nav__mobile {
 	min-height: 100vh;
 	padding: 1rem 0.5rem;
@@ -270,6 +282,7 @@ h1 {
 	.banner {
 		flex-direction: column-reverse;
 		padding: 1rem;
+		height: max-content;
 		margin-bottom: 2rem !important;
 	}
 	.banner__cta {
@@ -362,8 +375,7 @@ h1 {
 	width: 275px;
 	height: 155px;
 	border-radius: 24px;
-	background: url("https://i.ibb.co/sJJ9JGD/Ellipse-7.png") no-repeat right top,
-		url("https://i.ibb.co/b7K09Pg/Ellipse-8.png") no-repeat left bottom, #4062ff;
+	background: #4062ff;
 }
 
 .card p {

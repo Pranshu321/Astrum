@@ -110,7 +110,6 @@ function Features() {
                 >
                   <div className="relative inline-flex flex-col">
                     <img className="md:max-w-none mx-auto rounded" src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToSoFI_yWQbs3H-eB4F90EwA1F6Rh0RAyYPw&usqp=CAU"} width="500" height="462" alt="Features bg" />
-                    {/* <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={require('../images/features-element.png')} width="500" height="44" alt="Element" style={{ top: '30%' }} /> */}
                   </div>
                 </Transition>
                 {/* Item 2 */}

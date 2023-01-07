@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
-import "../css/cssfiles/dashboard.css";
+import "../css/cssfiles/NGODashboard.css";
 import { auth, db } from "../firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import { Link, useHistory } from "react-router-dom";
 import { collection, doc, getDocs } from "firebase/firestore";
+
 import grave from "../images/icons/grave.png";
 import patient from "../images/icons/patient.png";
 import emergency_call from "../images/icons/emergency-call.png";
 import Donations from "../utils/Donations";
-import axios from "axios";
 
-const Dashboard = () => {
+const NGODashboard = () => {
   const history = useHistory();
   const [Injured, setInjured] = useState(0);
   const [Deaths, setDeaths] = useState(0);
@@ -18,9 +18,6 @@ const Dashboard = () => {
   const [time, settime] = useState("");
   const [total, settotal] = useState(0);
   const [data, setdata] = useState([{}]);
-  const [Emerdata, setEmerdata] = useState([{}]);
-  const [evacuationStatus, setEvacuationStatus] = useState(false);
-  let totaldona = 0;
   const GetData = async () => {
     let i = 0,
       e = 0,
@@ -28,6 +25,7 @@ const Dashboard = () => {
     const querySnapshot = await getDocs(collection(db, "stats"));
     querySnapshot.forEach((doc) => {
       // doc.data() is never undefined for query doc snapshots
+      // console.log(doc.id, " => ", doc.data().Evacuated);
       i += parseInt(doc.data().Injured);
       e += parseInt(doc.data().Evacuated);
       d += parseInt(doc.data().Deaths);
@@ -45,54 +43,12 @@ const Dashboard = () => {
     querySnapshot.forEach((doc) => {
       temp.push(doc.data());
       i++;
+      // console.log(temp);
     });
     setdata(temp);
+    settotal(i);
   };
-  const GetDataEmer = async () => {
-    let temp = [];
-    const querySnapshot = await getDocs(collection(db, "EmergencyReq"));
-    querySnapshot.forEach((doc) => {
-      temp.push(doc.data());
-    });
-    setEmerdata(temp);
-  };
-
-  const [loc, setloc] = useState("");
-  function getLocation() {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-      console.log("Error");
-    }
-    const axios = require("axios");
-  }
-  function showPosition(position) {
-    const options = {
-      method: "GET",
-      url: "https://maps.googleapis.com/maps/api/geocode/json",
-      params: {
-        latlng: position.coords.latitude + "," + position.coords.longitude,
-        key: "AIzaSyCu1YXEvttfZdCaxtYBSgcX7M1EKD5cdV0",
-      },
-    };
-
-    axios
-      .request(options)
-      .then(function (response) {
-        console.log(response.data);
-        let address_comp = response.data.results[0].address_components.length;
-        console.log(address_comp);
-        setloc(
-          `${
-            response.data.results[0].address_components[address_comp - 3]
-              .long_name
-          }`
-        );
-      })
-      .catch(function (error) {
-        console.error(error);
-      });
-  }
+  //  console.log("cgeck data"  , data[0]);
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
@@ -109,8 +65,6 @@ const Dashboard = () => {
     });
     GetData();
     GetDataHelp();
-    GetDataEmer();
-    getLocation();
   }, []);
 
   return (
@@ -129,23 +83,6 @@ const Dashboard = () => {
         <nav class="nav flex flex-column" style={{ background: "#131515" }}>
           <ul class="nav__menus flex flex-column mb-14">
             <span className="text-2xl font-bold ml-2 text-text">Astrum</span>
-            <li class="mb-3">
-              <a class="nav__menu flex flex-align-center">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M15.4498 3.7803C15.4098 4.0303 15.3898 4.2803 15.3898 4.5303C15.3898 6.7803 17.2098 8.5993 19.4498 8.5993C19.6998 8.5993 19.9398 8.5703 20.1898 8.5303V16.5993C20.1898 19.9903 18.1898 22.0003 14.7898 22.0003H7.40076C3.99976 22.0003 1.99976 19.9903 1.99976 16.5993V9.2003C1.99976 5.8003 3.99976 3.7803 7.40076 3.7803H15.4498ZM15.6508 9.8603C15.3798 9.8303 15.1108 9.9503 14.9498 10.1703L12.5308 13.3003L9.75976 11.1203C9.58976 10.9903 9.38976 10.9393 9.18975 10.9603C8.99076 10.9903 8.81076 11.0993 8.68975 11.2593L5.73076 15.1103L5.66976 15.2003C5.49976 15.5193 5.57976 15.9293 5.87976 16.1503C6.01976 16.2403 6.16976 16.3003 6.33976 16.3003C6.57076 16.3103 6.78976 16.1893 6.92976 16.0003L9.43975 12.7693L12.2898 14.9103L12.3798 14.9693C12.6998 15.1393 13.0998 15.0603 13.3298 14.7593L16.2198 11.0303L16.1798 11.0503C16.3398 10.8303 16.3698 10.5503 16.2598 10.3003C16.1508 10.0503 15.9098 9.8803 15.6508 9.8603ZM19.5899 2C20.9199 2 21.9999 3.08 21.9999 4.41C21.9999 5.74 20.9199 6.82 19.5899 6.82C18.2599 6.82 17.1799 5.74 17.1799 4.41C17.1799 3.08 18.2599 2 19.5899 2Z"
-                    fill="black"
-                  />
-                </svg>
-                Your Location {loc ? loc : "none"}
-              </a>
-            </li>
             <li class="mt-8 mb-3">
               <a class="nav__menu active flex flex-align-center">
                 <svg
@@ -201,7 +138,43 @@ const Dashboard = () => {
                 Donate
               </a>
             </li>
-            
+            <li class="mb-3">
+              <a class="nav__menu flex flex-align-center">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.4498 3.7803C15.4098 4.0303 15.3898 4.2803 15.3898 4.5303C15.3898 6.7803 17.2098 8.5993 19.4498 8.5993C19.6998 8.5993 19.9398 8.5703 20.1898 8.5303V16.5993C20.1898 19.9903 18.1898 22.0003 14.7898 22.0003H7.40076C3.99976 22.0003 1.99976 19.9903 1.99976 16.5993V9.2003C1.99976 5.8003 3.99976 3.7803 7.40076 3.7803H15.4498ZM15.6508 9.8603C15.3798 9.8303 15.1108 9.9503 14.9498 10.1703L12.5308 13.3003L9.75976 11.1203C9.58976 10.9903 9.38976 10.9393 9.18975 10.9603C8.99076 10.9903 8.81076 11.0993 8.68975 11.2593L5.73076 15.1103L5.66976 15.2003C5.49976 15.5193 5.57976 15.9293 5.87976 16.1503C6.01976 16.2403 6.16976 16.3003 6.33976 16.3003C6.57076 16.3103 6.78976 16.1893 6.92976 16.0003L9.43975 12.7693L12.2898 14.9103L12.3798 14.9693C12.6998 15.1393 13.0998 15.0603 13.3298 14.7593L16.2198 11.0303L16.1798 11.0503C16.3398 10.8303 16.3698 10.5503 16.2598 10.3003C16.1508 10.0503 15.9098 9.8803 15.6508 9.8603ZM19.5899 2C20.9199 2 21.9999 3.08 21.9999 4.41C21.9999 5.74 20.9199 6.82 19.5899 6.82C18.2599 6.82 17.1799 5.74 17.1799 4.41C17.1799 3.08 18.2599 2 19.5899 2Z"
+                    fill="black"
+                  />
+                </svg>
+                Statistics
+              </a>
+            </li>
+            {/* <li class="mb-3">
+                            <a class="nav__menu flex flex-align-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 15.1739C16.3386 15.1739 20 15.8789 20 18.599C20 21.32 16.3146 22 12 22C7.66237 22 4 21.295 4 18.575C4 15.8539 7.68538 15.1739 12 15.1739ZM12 2C14.9391 2 17.294 4.35402 17.294 7.29105C17.294 10.2281 14.9391 12.5831 12 12.5831C9.0619 12.5831 6.70601 10.2281 6.70601 7.29105C6.70601 4.35402 9.0619 2 12 2Z"
+                                        fill="black" />
+                                </svg>
+                                Profile
+                            </a>
+                        </li> */}
+            {/* <li class="mb-3">
+                            <a class="nav__menu flex flex-align-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.7171 2.00012C13.4734 2.00012 14.1581 2.42012 14.5362 3.04012C14.7201 3.34012 14.8428 3.71012 14.8121 4.10012C14.7917 4.40012 14.8837 4.70012 15.0472 4.98012C15.5684 5.83012 16.7232 6.15012 17.6225 5.67012C18.6342 5.09012 19.9117 5.44012 20.4942 6.43012L21.1789 7.61012C21.7716 8.60012 21.4446 9.87012 20.4227 10.4401C19.554 10.9501 19.2474 12.0801 19.7686 12.9401C19.9321 13.2101 20.1161 13.4401 20.4022 13.5801C20.7599 13.7701 21.0358 14.0701 21.23 14.3701C21.6081 14.9901 21.5775 15.7501 21.2096 16.4201L20.4942 17.6201C20.1161 18.2601 19.4109 18.6601 18.6853 18.6601C18.3277 18.6601 17.9291 18.5601 17.6021 18.3601C17.3364 18.1901 17.0298 18.1301 16.7027 18.1301C15.691 18.1301 14.8428 18.9601 14.8121 19.9501C14.8121 21.1001 13.8719 22.0001 12.6967 22.0001H11.3068C10.1213 22.0001 9.18113 21.1001 9.18113 19.9501C9.16069 18.9601 8.31247 18.1301 7.30073 18.1301C6.96348 18.1301 6.6569 18.1901 6.40141 18.3601C6.07438 18.5601 5.6656 18.6601 5.31813 18.6601C4.58232 18.6601 3.87717 18.2601 3.49905 17.6201L2.7939 16.4201C2.41577 15.7701 2.39533 14.9901 2.77346 14.3701C2.93697 14.0701 3.24356 13.7701 3.59102 13.5801C3.87717 13.4401 4.06112 13.2101 4.23486 12.9401C4.74584 12.0801 4.43925 10.9501 3.57059 10.4401C2.55885 9.87012 2.23182 8.60012 2.81434 7.61012L3.49905 6.43012C4.09178 5.44012 5.35901 5.09012 6.38097 5.67012C7.27007 6.15012 8.42488 5.83012 8.94608 4.98012C9.10959 4.70012 9.20157 4.40012 9.18113 4.10012C9.16069 3.71012 9.27311 3.34012 9.46728 3.04012C9.8454 2.42012 10.5301 2.02012 11.2761 2.00012H12.7171ZM12.012 9.18012C10.4075 9.18012 9.10959 10.4401 9.10959 12.0101C9.10959 13.5801 10.4075 14.8301 12.012 14.8301C13.6164 14.8301 14.8837 13.5801 14.8837 12.0101C14.8837 10.4401 13.6164 9.18012 12.012 9.18012Z"
+                                        fill="black" />
+                                </svg>
+                                Settings
+                            </a>
+                        </li> */}
           </ul>
           <ul class="nav__logouts flex flex-column flex-justify-between">
             <li onClick={() => auth.signOut()}>
@@ -247,48 +220,29 @@ const Dashboard = () => {
               class="search__input"
             />
           </div>
-          <div class="bg-white banner" style={{ height: "max-content" }}>
-            <h2 className="text-red-600 font-semibold text-2xl mb-4">
-              Emergency Requests
-            </h2>
-            <table class="table-auto overflow-scroll w-100vw">
-              <thead class="">
-                <tr>
-                  <th>
-                    <h3 class="text-black mx-6 my-3">Time</h3>
-                  </th>
-                  <th>
-                    <h3 class="text-black mx-6 my-3">Location</h3>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {Emerdata.map((item, idx) => (
-                  <tr class="">
-                    <th>
-                      <h3 class="text-black mx-4 my-3">{item.Timestamp}</h3>
-                    </th>
-                    <th>
-                      <h3 class="text-black mx-4 my-3">
-                        <Link
-                          to={{
-                            pathname: "/map/parameter-data",
-                            state: { lat: item.lat, lng: item.long },
-                          }}
-                        >
-                          {item.FullAddress}
-                        </Link>
-                      </h3>
-                    </th>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div class="bg-white flex flex-justify-between flex-align-center banner">
+            <div>
+              <h1 class="text-4xl text-black mb-2">Want to</h1>
+              <h1 class="text-4xl text-black mb-4">
+                Report Humanitarian Relief?
+              </h1>
+              <div class="banner__cta">
+                <button
+                  onClick={() => history.push("/statsUp")}
+                  class="button bg-red-600 text-black py-4 px-8"
+                >
+                  Report
+                </button>
+              </div>
+            </div>
+
+            <div class="banner__img">
+            </div>
           </div>
           <h2 class="text-2xl mb-5 font-semibold text-text">Stats</h2>
           <div class="portos">
             <div class="flex flex-justify-between flex-align-center bg-white porto">
-             
+              
               <img src={patient} alt="" />
               <div class="mt-1">
                 <div class="flex flex-align-center flex-justify-between mb-2">
@@ -304,7 +258,6 @@ const Dashboard = () => {
               </div>
             </div>
             <div class="flex flex-justify-between flex-align-center bg-white porto">
-              
               <img src={grave} alt="" />
               <div class="mt-1">
                 <div class="flex flex-align-center flex-justify-between mb-2">
@@ -320,7 +273,6 @@ const Dashboard = () => {
               </div>
             </div>
             <div class="flex flex-justify-between flex-align-center bg-white porto">
-              
               <img src={emergency_call} alt="" />
               <div class="mt-1">
                 <div class="flex flex-align-center flex-justify-between mb-2">
@@ -336,7 +288,6 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
-          
           <table class="table-auto overflow-scroll w-100vw">
             <thead class=" ">
               <tr>
@@ -373,41 +324,28 @@ const Dashboard = () => {
                     <h3 class="text-white my-3">{item.Gender}</h3>
                   </th>
                   <th>
-                    <h3 class="text-white my-3">{item.toh}</h3>
+                    <h3 class="text-white my-3">{"Medical"}</h3>
                   </th>
                   <th>
                     <h3 class="text-white my-3">{item.Phone}</h3>
                   </th>
                   <th>
-                    <h3 class="text-white my-3">
-                      <Link
-                        to={{
-                          pathname: "/map/parameter-data",
-                          state: { lat: item.lat, lng: item.long },
-                        }}
-                      >
-                        {item.Place}{" "}
-                      </Link>
-                    </h3>
+                    <h3 class="text-white my-3">{item.Place}</h3>
                   </th>
                   <th>
                     <label
                       for="toggle"
-                      class={`mx-4 my-3 text-md ${
-                        evacuationStatus != false
-                          ? "text-green-500"
-                          : "text-yellow-500"
-                      }`}
+                      class=" mx-4 my-3 text-md text-green-500"
                     >
-                      {" "}
-                      {() => setEvacuationStatus(item.Evacuated)}{" "}
-                      {evacuationStatus ? "Evacuated" : "Ongoing"}
+                      Evacuated
                     </label>
                   </th>
                   <th>
                     <div class="mx-4 my-3 relative  inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
                       <input
-                        onClick={() => setEvacuationStatus(!evacuationStatus)}
+                        onChange={(e) =>
+                          console.log("Check toogle", e.target.value)
+                        }
                         type="checkbox"
                         name="toggle"
                         id="toggle"
@@ -443,24 +381,16 @@ const Dashboard = () => {
               </p>
             </div>
           </div>
-          <h2 class="text-2xl mb-4 text-text font-semibold">
-            Total Donations Received
-          </h2>
+          <h2 class="text-2xl mb-4 text-text">Help Request Received</h2>
           <div class="card flex flex-align-center flex-justify-center flex-column mb-4">
-            {Donations.slice(2, 7).map((item, idx) => {
-              totaldona += item.donation_Amount;
-            })}
-            <h2 class="text-2xl text-white text-bold mb-2">₹{totaldona}</h2>
+            <h2 class="text-2xl text-white text-bold mb-2">{total}</h2>
             <p class="text-bold text-white flex flex-align-center">
               Last Updated {time}
             </p>
           </div>
-          
-          <h2 class="text-2xl mt-6 mb-4 text-text font-semibold">
-            Recent Donations
-          </h2>
+          <h2 class="text-2xl mt-6 mb-4 text-text">Recent Donations</h2>
           <div class="transactions">
-            {Donations.slice(2, 7).map((item, idx) => (
+            {Donations.map((item, idx) => (
               <div class="transaction flex flex-align-center flex-justify-between mb-4">
                 <div class="flex flex-align-center flex-justify-between">
                   <svg
@@ -533,7 +463,7 @@ const Dashboard = () => {
                     </small>
                   </div>
                 </div>
-                <p class="text-bold text-success">+{item.donation_Amount}</p>
+                <p class="text-bold text-success">{item.donation_Amount}</p>
               </div>
             ))}
           </div>
@@ -543,4 +473,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default NGODashboard;

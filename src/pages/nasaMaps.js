@@ -12,46 +12,47 @@ import thunder from "../images/icons/thunder.png";
 import volcano from "../images/icons/volcano.png";
 
 export default function NasaMap({ eventData }) {
-	console.log("naana mao ", eventData);
-	const { isLoaded } = useLoadScript({
-		googleMapsApiKey: "AIzaSyCu1YXEvttfZdCaxtYBSgcX7M1EKD5cdV0",
-	});
-	const markers = eventData.map((ev, index) => {
-		return (
-			<Marker
-				key={index}
-				position={{
-					lat: ev.latitude,
-					lng: ev.longitude,
-				}}
-				icon={{
-					url:
-						ev.categories == "Severe Storms"
-							? thunder
-							: ev.categories == "Volcanoes"
-							? volcano
-							: ev.categories == "Sea and Lake Ice"
-							? iceberg
-							: ev.categories == "Wildfires"
-							? fire
-							: fire,
-				}}
-			/>
-		);
-	});
 
-	const center2 = useMemo(() => ({ lat: 28.677592, lng: 77.2913126 }), []);
-	if (!isLoaded) return <div>Loading...</div>;
-	return (
-		<>
-			<GoogleMap
-				zoom={10}
-				center={center2}
-				mapContainerClassName="map-container"
-				ClassName="map-container"
-			>
-				{markers}
-			</GoogleMap>
-		</>
-	);
+  console.log("naana mao ", eventData);
+  const { isLoaded } = useLoadScript({
+    googleMapsApiKey: "AIzaSyCu1YXEvttfZdCaxtYBSgcX7M1EKD5cdV0",
+  });
+  const markers = eventData.map((ev, index) => {
+    return (
+      <Marker
+        key={index}
+        position={{
+          lat: ev.latitude,
+          lng: ev.longitude,
+        }}
+        icon={{
+          url:
+            ev.categories == "Severe Storms"
+              ? thunder
+              : ev.categories == "Volcanoes"
+              ? volcano
+              : ev.categories == "Sea and Lake Ice"
+              ? iceberg
+              : ev.categories == "Wildfires"
+              ? fire
+              : fire,
+        }}
+      />
+    );
+  });
+
+  const center2 = useMemo(() => ({ lat: 28.677592, lng: 77.2913126 }), []);
+  if (!isLoaded) return <div>Loading...</div>;
+  return (
+    <>
+      <GoogleMap
+        zoom={10}
+        center={center2}
+        mapContainerClassName="map-container"
+        ClassName="map-container"
+      >
+        {markers}
+      </GoogleMap>
+    </>
+  );
 }
