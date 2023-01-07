@@ -19,7 +19,7 @@
     "firebase": "^9.13.0",
     "google-map-react": "^2.2.0",
     "mdb-react-ui-kit": "^5.0.0",
-    "node-sass": "^8.0.0",
+    "node-sass": "^4.0.0",
     "notistack": "^2.0.8",
     "postcss-cli": "^7.1.2",
     "react": "^16.13.1",
