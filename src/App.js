@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Switch, Route, useLocation } from "react-router-dom";
-// import "./css/style.scss";
-import "./styles/css/tailwind.css"
-import "./styles/css/utilities.css"
-import "./styles/css/base.css"
-import "./styles/css/components.css"
-import "./styles/css/utility-patterns.css"
-import "./styles/css/range-slider.css"
-import "./styles/css/toggle-switch.css"
-import "./styles/css/theme.css"
-import "./styles/css/aos.css"
+import "./css/style.scss";
+// import "./styles/css/tailwind.css"
+// import "./styles/css/base.css"
+// import "./styles/css/components.css"
+// import "./styles/css/utility-patterns.css"
+// import "./styles/css/range-slider.css"
+// import "./styles/css/toggle-switch.css"
+// import "./styles/css/theme.css"
+// import "./styles/css/utilities.css"
+// import "./styles/css/aos.css"
 import AOS from "aos";
 import { focusHandling } from "cruip-js-toolkit";
 import Home from "./pages/Home";
