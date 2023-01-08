@@ -32,7 +32,7 @@ With the rapid change in climate and increasing global warming , quick response 
 
 ## How it works :
 
-We have a built Disaster Risk Management System for better management and collaboration during a natural or man-made disaster .Our web helps in prediction of upcoming natural threats using Nasa API, along with that we have integrated NGos , Police and local helpers on our platform for faster evacuation and relief work.
+We have a built Disaster Risk Management System for better management and collaboration during a natural or man-made disaster .Our web helps in prediction of upcoming natural threats using Nasa API, along with that we have integrated platform for collaboration between Ngos , Police and Local helpers for faster evacuation and relief work.
 
   - Astrum provides the authorities a personalized dashboard with the track of the recent evacuations and Emergency requests everything which updates synchronously. 
   - We update the recent stats no. of Injured , Deaths , Evacuated in the current disaster.
