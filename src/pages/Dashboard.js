@@ -72,7 +72,7 @@ const Dashboard = () => {
       url: "https://maps.googleapis.com/maps/api/geocode/json",
       params: {
         latlng: position.coords.latitude + "," + position.coords.longitude,
-        key: process.env.REACT_APP_GMAP_API,
+        key: "AIzaSyC1mpaHajUPWU696t2u2xboKThZC-lRnnA",
       },
     };
 
