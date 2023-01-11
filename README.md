@@ -150,7 +150,7 @@ We have loads of Ideas for our web app , for the time being we have thought of a
 <!-- CONTACT -->
 ## Contact
 
-Team Name - Hackit
+Team Name - Buggies
 
 Leader  - [Pranshu Jain](mailto:pranshujain0111@gmail.com)
 
