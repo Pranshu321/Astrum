@@ -180,10 +180,9 @@ Don't forget to give the project a star! Thanks again!
 We have loads of Ideas for our web app , for the time being we have thought of a few!
 
 * Filtering about important tweets/ SOS during a calamity so that a need for help through social media doesnot go unnoticed! 
-* Currently we have the free version of Google API keys which restrict many map features, we plan to improve it in future!
-* Tracking more natural calamities 
-* Notifications
-* Improving the backend architecture of CRUD
+* **Multi-language support:** The project can be translated and customized to support multiple languages to reach a wider audience and to better serve the needs of       people speaking different languages.
+* **Virtual and augmented reality:** The project can use virtual and augmented reality to provide users with more immersive and detailed information about disasters.     This can include 3D maps, simulations of disasters, and virtual tours of affected areas.
+* We gonna implement AI and machine learning to analyze the data collected and make predictions about the spread and severity of disasters. This can help authorities     and NGOs to respond more effectively and efficiently.
   
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -200,8 +199,6 @@ Member 3 - [Sreetama Ghosh Hazra](https://github.com/Sreetama2001)
 
 Web APP : [Astrum](https://astrum-hackit.netlify.app/)
 
-Video Link : [demo_video](https://www.loom.com/share/07374277cc9242ab89b023517e9a3c8c)
+Video Link : [Demo Video](https://www.loom.com/share/07374277cc9242ab89b023517e9a3c8c)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
