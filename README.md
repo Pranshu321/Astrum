@@ -107,7 +107,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 ## Welcome to Astrum
-![image](https://user-images.githubusercontent.com/86917304/201508083-06daafa1-7ea1-44f8-9cb5-bb053a88c230.png)
+![image](https://user-images.githubusercontent.com/86917304/215289523-fb2e62c2-f120-4a88-9eca-81a1ca01dbac.png)
 
 ## Personalized Dashboard
 The Personalized Dashboard provides a real-time view of the disaster event, including updated statistics on the number of incidents reported, the number of people affected, and the resources needed for relief efforts. This information is collected and analyzed from the data input by users and NGO's
