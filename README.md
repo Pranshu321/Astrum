@@ -47,12 +47,12 @@ The Astrum project is driven by the belief that by making post-disaster manageme
 
 We have a built Disaster Risk Management System for better management and collaboration during a natural or man-made disaster .Our web helps in prediction of upcoming natural threats using Nasa API, along with that we have integrated platform for collaboration between Ngos , Police and Local helpers for faster evacuation and relief work.
 
-  - Astrum provides the authorities a personalized dashboard with the track of the recent evacuations and Emergency requests everything which updates synchronously. 
-  - We update the recent stats no. of Injured , Deaths , Evacuated in the current disaster.
+  - The Astrum project includes a "Personalized Dashboard" feature, which allows users to view updated statistics, help requests, emergency requests, donation             information, and create broadcast messages all in one place. This feature can be accessed through the web-based interface and is designed to be user-friendly and       easy to navigate.
+  - Here we also includes an "Alert Room" feature, which is a centralized platform for broadcasting important information, alerts, and relief updates to NGOs and           government authorities. This feature allows for real-time communication and coordination during a disaster event.
+  - a live chat feature, which enables real-time communication between suffering people and authorities during a disaster event. This feature allows people to report       incidents and request assistance in real-time with privacy control, and allows authorities to respond quickly and efficiently.
   - Finding the hospots is difficult so , we also help authorities to identify the hotspots and type of help needed there for faster rescue /operation.
-  - We allow user location sharing (currently under development) to track people to rescue or in need of any kind of emergency help.
-  - Using Nasa API we can track the upcoming volcanoes /tropical storms. (we expand this feature to other natural calamities) 
-  - We can donate to the needy securely through our app.
+  - The Emergency Help feature is an important component of the Astrum project, as it allows people to quickly and easily request assistance in emergency situations,       and enables authorities to respond quickly and effectively to the needs of affected communities during a disaster event.
+  - We used Nasa API we can track the upcoming volcanoes /tropical storms. (we expand this feature to other natural calamities) 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
