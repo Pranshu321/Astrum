@@ -4,7 +4,7 @@ import { AiFillHeart, AiFillAlert, AiFillInfoCircle } from "react-icons/ai";
 const Card = ({ title, desc, link, date, time, type }) => {
 	return (
 		<div>
-			<div class="w-64 p-6 bg-white border flex flex-col justify-center items-center border-gray-200 rounded-lg shadow-xl h-44 dark:bg-gray-800 dark:border-gray-700">
+			<div class="w-64 p-6 bg-white border flex flex-col justify-center items-center border-gray-200 rounded-lg shadow-xl h-44">
 				<div className="flex flex-col justify-center items-center gap-2">
 					{type !== "alert" && type !== "info" ? (
 						<AiFillHeart size={40} color="#4BB543" />
@@ -14,7 +14,7 @@ const Card = ({ title, desc, link, date, time, type }) => {
 						<AiFillInfoCircle size={40} color="#F1D12F" />
 					)}
 					<a href="#">
-						<h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+						<h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
 							{title}
 						</h5>
 					</a>

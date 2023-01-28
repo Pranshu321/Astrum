@@ -33,14 +33,14 @@ const Dashboard = () => {
 					email: email,
 					ngo: auth.currentUser?.displayName,
 					user: user,
-					link: `http://localhost:5000/chat.html?name=${user}&room=${uniq}`,
+					link: `https://astra-chat.up.railway.app/chat.html?name=${user}&room=${uniq}`,
 				},
 				"gP8sKnDLte9gp24k2"
 			)
 			.then(function (response) {
 				console.log("SUCCESS!", response.status, response.text);
 				window.open(
-					`http://localhost:5000/chat.html?name=${auth.currentUser?.displayName}&room=${uniq}`,
+					`https://astra-chat.up.railway.app/chat.html?name=${auth.currentUser?.displayName}&room=${uniq}`,
 					"_blank"
 				);
 				setemail("");
@@ -313,7 +313,10 @@ const Dashboard = () => {
 							class="search__input"
 						/>
 					</div>
-					<div class="bg-white banner w-full flex justify-center flex-col" style={{ height: "max-content" }}>
+					<div
+						class="bg-white banner w-full flex justify-center flex-col"
+						style={{ height: "max-content" }}
+					>
 						<h2 className="text-red-600 font-semibold text-2xl mb-4">
 							Emergency Requests
 						</h2>
@@ -496,7 +499,7 @@ const Dashboard = () => {
 												sendMail(uuidv4(), item.FName, item.Email);
 											}}
 											target={"_blank"}
-											className="text-white hover:text-green-500"
+											className="text-white cursor-pointer hover:text-green-500"
 										>
 											Live Chat
 										</p>

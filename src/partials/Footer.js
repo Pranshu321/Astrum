@@ -100,6 +100,19 @@ function Footer() {
 							>
 								Privacy Policy
 							</Link>
+							<div className="mt-4 text-base flex">
+								<span className="pt-2">Build at</span>
+								<a href="https://www.hacknitr.com/" target={"_blank"}>
+									<span>
+										<img
+											src="https://user-images.githubusercontent.com/86917304/215270400-40b55f43-aa2a-4f29-8aa2-951106e06018.png"
+											width={30}
+											className="ml-2"
+											alt="image"
+										/>
+									</span>
+								</a>
+							</div>
 						</div>
 					</div>
 

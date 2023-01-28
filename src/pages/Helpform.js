@@ -5,6 +5,7 @@ import { collection, addDoc } from "firebase/firestore";
 import { db } from "../firebase";
 import toast, { Toaster } from "react-hot-toast";
 import axios from "axios";
+import Footer from "../partials/Footer";
 
 const Helpform = () => {
 	const [loc, setloc] = useState("");
@@ -48,8 +49,8 @@ const Helpform = () => {
 			})
 			.catch((error) => console.log("error", error));
 	}
-  const SendData = async (e) => {
-    e.preventDefault();
+	const SendData = async (e) => {
+		e.preventDefault();
 		try {
 			const docRef = await addDoc(collection(db, "HelpForm"), formdata);
 			console.log("Document written with ID: ", docRef.id);
@@ -60,7 +61,7 @@ const Helpform = () => {
 	};
 
 	return (
-		<>
+		<div className="bg-back">
 			<Toaster
 				position="top-center"
 				reverseOrder={false}
@@ -88,7 +89,7 @@ const Helpform = () => {
 			/>
 			<Header />
 			<div className="bg-back" style={{ padding: "60px" }}></div>
-			<div className="forms">
+			<div className="forms mb-20">
 				<form class="form" onSubmit={SendData}>
 					<div class="title">Welcome</div>
 					<div class="subtitle">Let us know Your Problem!</div>
@@ -247,7 +248,8 @@ const Helpform = () => {
 					</button>
 				</form>
 			</div>
-		</>
+			<Footer />
+		</div>
 	);
 };
 

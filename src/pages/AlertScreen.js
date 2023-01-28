@@ -36,7 +36,7 @@ const AlertScreen = () => {
 									type="search"
 									id="default-search"
 									class="block w-full p-4 pl-10 text-base text-black font-semibold border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
-									placeholder="Search Alerts , Relief"
+									placeholder="Search Alerts , Relief and Info keywords"
 									onChange={(e) => setfilter(e.target.value)}
 									required
 								/>
@@ -47,7 +47,7 @@ const AlertScreen = () => {
 								.filter((item) => {
 									if (filter === "") {
 										return item;
-									} else if (item.type.includes(filter)) {
+									} else if (item.type.includes(filter.toLocaleLowerCase())) {
 										return item;
 									}
 								})
