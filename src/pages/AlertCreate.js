@@ -42,7 +42,8 @@ const AlertCreate = () => {
 		console.log(formdata);
 	}
 
-	const sendData = async () => {
+    const sendData = async (e) => {
+        e.preventDefault();
 		try {
 			const docRef = await addDoc(collection(db, "alerts"), formdata);
 			console.log("Document written with ID: ", docRef.id);
@@ -102,7 +103,7 @@ const AlertCreate = () => {
 
             </div> */}
 			<div className="forms" style={{ height: "100%" }}>
-				<div class="form my-10">
+				<form onSubmit={sendData} class="form my-10">
 					<div class="title">Publish Alert / Relief</div>
 					<div class="subtitle">Let everyone know whats you are doing?</div>
 					<div class="input-container ic1">
@@ -235,10 +236,10 @@ const AlertCreate = () => {
 							</a>
 						</p>
 					</div> */}
-					<button type="text" class="submit" onClick={sendData}>
+					<button type="submit" class="submit">
 						Submit
 					</button>
-				</div>
+				</form>
 			</div>
 		</>
 	);
