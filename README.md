@@ -47,12 +47,12 @@ The Astrum project is driven by the belief that by making post-disaster manageme
 
 We have a built Disaster Risk Management System for better management and collaboration during a natural or man-made disaster .Our web helps in prediction of upcoming natural threats using Nasa API, along with that we have integrated platform for collaboration between Ngos , Police and Local helpers for faster evacuation and relief work.
 
-  - Astrum provides the authorities a personalized dashboard with the track of the recent evacuations and Emergency requests everything which updates synchronously. 
-  - We update the recent stats no. of Injured , Deaths , Evacuated in the current disaster.
+  - The Astrum project includes a "Personalized Dashboard" feature, which allows users to view updated statistics, help requests, emergency requests, donation             information, and create broadcast messages all in one place. This feature can be accessed through the web-based interface and is designed to be user-friendly and       easy to navigate.
+  - Here we also includes an "Alert Room" feature, which is a centralized platform for broadcasting important information, alerts, and relief updates to NGOs and           government authorities. This feature allows for real-time communication and coordination during a disaster event.
+  - a live chat feature, which enables real-time communication between suffering people and authorities during a disaster event. This feature allows people to report       incidents and request assistance in real-time with privacy control, and allows authorities to respond quickly and efficiently.
   - Finding the hospots is difficult so , we also help authorities to identify the hotspots and type of help needed there for faster rescue /operation.
-  - We allow user location sharing (currently under development) to track people to rescue or in need of any kind of emergency help.
-  - Using Nasa API we can track the upcoming volcanoes /tropical storms. (we expand this feature to other natural calamities) 
-  - We can donate to the needy securely through our app.
+  - The Emergency Help feature is an important component of the Astrum project, as it allows people to quickly and easily request assistance in emergency situations,       and enables authorities to respond quickly and effectively to the needs of affected communities during a disaster event.
+  - We used Nasa API we can track the upcoming volcanoes /tropical storms. (we expand this feature to other natural calamities) 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -103,34 +103,56 @@ _Below is an example of how you can instruct your audience on installing and set
 
 ---
 
-## Let's do a walkthrough of our app
+# Let's do a walkthrough of our app
 
 
 ## Welcome to Astrum
 ![image](https://user-images.githubusercontent.com/86917304/201508083-06daafa1-7ea1-44f8-9cb5-bb053a88c230.png)
 
 ## Personalized Dashboard
-![image](https://user-images.githubusercontent.com/86917304/201508215-44348334-f62c-4d30-ad41-6283452e0da2.png)
+The Personalized Dashboard provides a real-time view of the disaster event, including updated statistics on the number of incidents reported, the number of people affected, and the resources needed for relief efforts. This information is collected and analyzed from the data input by users and NGO's
+
+Users can also view and respond to help and emergency requests, as well as view and manage donations. The feature also allows users to create and send broadcast messages, which can be used to communicate important information to affected communities and aid organizations.
+
+![image](https://user-images.githubusercontent.com/86917304/215279754-af2495f5-7d14-4454-98fa-57f8a903563a.png)
+
+## Live / One-to-One Chat (Astra-Chat)
+The live chat feature can be accessed through a mobile application, and is designed to be user-friendly and easy to navigate. It allows people to report incidents such as injuries, damage to property, and the need for evacuation. The authorities can use the chat feature to provide information on evacuation routes, emergency shelter locations, and other important information.
+
+The live chat feature also allows authorities to request information from people on the ground. This can be used to gather information on the extent of damage, the number of people affected, and the resources needed for relief efforts.
+
+![image](https://user-images.githubusercontent.com/86917304/215282084-0a4003c7-06bb-4cc6-830b-d8fe7ac9afbf.png)
+
 
 ## Previous Disaster Information
-![image](https://user-images.githubusercontent.com/86917304/201508254-cb7c8a9e-3709-419d-a90a-ffe6b1a29650.png)
+The Astrum project includes a feature that allows users to access information about previous disasters. This feature can be accessed through the web-based interface and is designed to be user-friendly and easy to navigate.
+The previous disaster information includes details such as the location, date, and type of disaster This information can be used to gain insights and make data-driven decisions during a disaster event.
+
+![image](https://user-images.githubusercontent.com/86917304/215279787-afebf223-e820-4a2a-982c-ad60ce0d7ab2.png)
 
 ## Tracking of Disasters 
+Users can access this feature through the web-based interface, where they can view maps and other data visualizations that display information about the location, what type of disaster. The data is updated in real-time, allowing users to stay informed about the latest developments.
+
 ![image](https://user-images.githubusercontent.com/86917304/201508273-9e9969ba-4dcf-449a-8514-f6f613cc843c.png)
 
 ## Donation for needy one
+Users can make donations through a variety of payment methods, including credit card, debit card, and online banking. They can also choose to make donations to specific disaster relief efforts or organizations.
+
 ![image](https://user-images.githubusercontent.com/86917304/201508333-c7485405-ef3c-4850-a4b2-177f78e5d498.png)
 
-## Features for Needy ones
-### Need Help form
+# Features for Needy ones
+
+## Need Help form
+
+"Help Form" feature, which allows users to request assistance and provide information about their needs during a disaster event. This feature can be accessed through the mobile application (PWA) or web-based interface and is designed to be user-friendly and easy to navigate.
+
 ![image](https://user-images.githubusercontent.com/86917304/201508371-66709b0b-b2ba-4d95-9d33-0ba4f24dc9d6.png)
 
-### Emergency Help - (One click help , direct location sharing)
+## Emergency Help - (One click help , direct location sharing)
+
+When a person requests emergency help, their location is automatically shared with the authorities, allowing them to quickly and efficiently respond to the incident. The authorities can use this information to dispatch emergency services, such as ambulances or fire trucks, to the affected area.
+
 ![image](https://user-images.githubusercontent.com/86917304/201508392-3edda4b3-6fd6-4a4b-9bf9-a6900d06fd66.png)
-
-### Phone View
-![image](https://user-images.githubusercontent.com/86917304/201508184-86698777-c4b8-4314-84fc-2a61f517457d.png)
-
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
