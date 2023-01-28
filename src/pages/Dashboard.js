@@ -313,7 +313,7 @@ const Dashboard = () => {
 							class="search__input"
 						/>
 					</div>
-					<div class="bg-white banner" style={{ height: "max-content" }}>
+					<div class="bg-white banner w-full flex justify-center flex-col" style={{ height: "max-content" }}>
 						<h2 className="text-red-600 font-semibold text-2xl mb-4">
 							Emergency Requests
 						</h2>

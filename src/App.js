@@ -23,6 +23,8 @@ import StatsUpdate from "./pages/StatsUpdate";
 import Map from "./pages/map";
 import NasaMap from "./pages/nasaMaps";
 import axios from "axios";
+import AlertCreate from "./pages/AlertCreate";
+// import AlertScreen from "./pages/AlertScreen";
 
 function App() {
   const location = useLocation();
@@ -99,6 +101,12 @@ function App() {
         <Route path="/map/:type">
           <Map />
         </Route>
+        <Route path="/createalert">
+          <AlertCreate />
+        </Route>
+        {/* <Route path="/news">
+          <AlertScreen />
+        </Route> */}
         <Route path="/nasamap">
           <NasaMap eventData={eventData} />
         </Route>

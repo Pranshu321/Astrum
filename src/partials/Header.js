@@ -72,6 +72,14 @@ function Header() {
               </li>
               <li>
                 <Link
+                  to="/news"
+                  className="btn-sm mr-3  bg-gray-900 text-gray-200 hover:bg-gray-800 px-5 flex items-center transition duration-150 ease-in-out"
+                >
+                  News Room
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/signin"
                   className="btn-sm  bg-white text-back hover:text-gray-900 px-5 flex items-center transition duration-150 ease-in-out"
                 >
