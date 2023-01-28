@@ -73,7 +73,7 @@ function HeroHome() {
 		<section className="relative bg-back">
 			{/* Illustration behind hero content */}
 			<div
-				className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none"
+				className="absolute ml-6 left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none"
 				aria-hidden="true"
 			>
 				<svg
@@ -121,8 +121,7 @@ function HeroHome() {
 								data-aos="zoom-y-out"
 								data-aos-delay="150"
 							>
-								Our team always be ready and manage post disaster hectic
-								situation and help the needy one
+								Connecting those in need with those who can help, in real-time with the guiding light in times of crisis.
 							</p>
 							<div
 								className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
