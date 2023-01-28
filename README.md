@@ -72,6 +72,8 @@ We have a built Disaster Risk Management System for better management and collab
 
 6. **Email Service**       : `Emailjs`
 
+7. **Payment Service**     : `Stripe`
+
 
 <!-- GETTING STARTED -->
 ## Getting Started
