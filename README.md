@@ -1,4 +1,11 @@
-# Astrum - Disaster Risk Reduction 
+<h1 align="center" size="30px">Astrum - Disaster Risk Reduction</h1> 
+
+<div align="center">
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/03b9c630-7502-4339-aaa8-02711a254c11/deploy-status)](https://app.netlify.com/sites/astrum-hackit/deploys)
+
+</div>
+
 
 <div align="center">
   <a id="top" href="astrum-hackit.netlify.app" target="blank">
@@ -18,7 +25,13 @@
 
 ## The motivation:
  
-With the rapid change in climate and increasing global warming , quick response to a disaster saves a lot of lives. According to a report, climate change-induced natural disasters killed almost 3,000 people and 70,000 livestock, and destroyed around 4.1 lakh houses just this year alone. They also affected 18 lakh hectares of crop area — about 1% of the total cropped area in India . We studied that results can be a little worse off if we plan and manage effectively during a crisis. Hence we came up we an idea to build a Post and pre disaster management system.    
+With the rapid change in climate and increasing global warming , quick response to a disaster saves a lot of lives. According to a report, climate change-induced natural disasters killed almost 3,000 people and 70,000 livestock, and destroyed around 4.1 lakh houses just this year alone. They also affected 18 lakh hectares of crop area — about 1% of the total cropped area in India . We studied that results can be a little worse off if we plan and manage effectively during a crisis.
+
+The motivation for the Astrum project stems from the realization that current post-disaster management systems are often fragmented and inefficient. In the aftermath of a disaster, the ability to quickly and effectively collect, analyze, and disseminate critical information is essential for the safety and well-being of affected communities. However, the lack of a centralized platform for data management and communication can lead to confusion, duplication of efforts, and wasted resources.
+
+Astrum aims to address these issues by providing a comprehensive and customizable platform for post-disaster management. The platform includes a web-based interface for data input and visualization, as well as a set of tools for data analysis and decision-making. It also includes a **mobile application [(PWA)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)** that allows users to report incidents and request assistance in real-time.
+
+The Astrum project is driven by the belief that by making post-disaster management more efficient and effective, we can better serve the needs of affected communities and aid organizations. We hope that by providing this open-source platform, we can help save lives and improve recovery efforts in the aftermath of disasters.
 
 <!-- <img
   src=""
@@ -122,6 +135,7 @@ _Below is an example of how you can instruct your audience on installing and set
 ## Contributions
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+This project is open to contributions from developers, designers, and disaster management experts. We welcome all pull requests, bug reports, and feature requests. Join us in our mission to make post-disaster management more efficient and effective.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
@@ -152,7 +166,7 @@ We have loads of Ideas for our web app , for the time being we have thought of a
 
 Team Name - Buggies
 
-Leader  - [Pranshu Jain](mailto:pranshujain0111@gmail.com)
+Leader  - [Pranshu Jain](https://github.com/Pranshu321)
 
 Member 2 - [Mohammad Sami](https://github.com/MSamiDev)
 
@@ -160,7 +174,7 @@ Member 3 - [Sreetama Ghosh Hazra](https://github.com/Sreetama2001)
 
 Web APP : [Astrum](https://astrum-hackit.netlify.app/)
 
-Video Link : [demo_video]()
+Video Link : [demo_video](https://www.loom.com/share/07374277cc9242ab89b023517e9a3c8c)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
