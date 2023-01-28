@@ -75,54 +75,54 @@ const StatsUpdate = () => {
 
             </div> */}
       <div className="forms" style={{ height: "100vh" }}>
-        <div class="form">
-          <div class="title">Update Stats</div>
-          <div class="subtitle">Let us know whats the current senerio?</div>
-          <div class="input-container ic1">
+        <div className="form">
+          <div className="title">Update Stats</div>
+          <div className="subtitle">Let us know whats the current senerio?</div>
+          <div className="input-container ic1">
             <input
               onChange={(e) =>
                 setformdata({ ...formdata, Injured: e.target.value })
               }
               id="firstname"
-              class="input"
+              className="input"
               type="number"
               placeholder=""
               required
             />
-            <div class="cut"></div>
-            <label for="firstname" class="placeholder">
+            <div className="cut"></div>
+            <label for="firstname" className="placeholder">
               Injured
             </label>
           </div>
-          <div class="input-container ic1">
+          <div className="input-container ic1">
             <input
               onChange={(e) =>
                 setformdata({ ...formdata, Evacuated: e.target.value })
               }
               id="firstname"
-              class="input"
+              className="input"
               type="number"
               placeholder=""
               required
             />
-            <div class="cut"></div>
-            <label for="firstname" class="placeholder">
+            <div className="cut"></div>
+            <label for="firstname" className="placeholder">
               Evacuated
             </label>
           </div>
-          <div class="input-container ic1">
+          <div className="input-container ic1">
             <input
               onChange={(e) =>
                 setformdata({ ...formdata, Deaths: e.target.value })
               }
               id="firstname"
-              class="input"
+              className="input"
               type="number"
               placeholder=""
               required
             />
-            <div class="cut"></div>
-            <label for="firstname" class="placeholder">
+            <div className="cut"></div>
+            <label for="firstname" className="placeholder">
               Deaths
             </label>
           </div>
@@ -138,7 +138,7 @@ const StatsUpdate = () => {
               </a>
             </p>
           </div>
-          <button type="text" class="submit" onClick={sendData}>
+          <button type="text" className="submit" onClick={sendData}>
             Submit
           </button>
         </div>

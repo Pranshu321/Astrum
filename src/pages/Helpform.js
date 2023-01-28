@@ -90,150 +90,150 @@ const Helpform = () => {
 			<Header />
 			<div className="bg-back" style={{ padding: "60px" }}></div>
 			<div className="forms mb-20">
-				<form class="form" onSubmit={SendData}>
-					<div class="title">Welcome</div>
-					<div class="subtitle">Let us know Your Problem!</div>
-					<div class="input-container ic1">
+				<form className="form" onSubmit={SendData}>
+					<div className="title">Welcome</div>
+					<div className="subtitle">Let us know Your Problem!</div>
+					<div className="input-container ic1">
 						<input
 							onChange={(e) =>
 								setformdata({ ...formdata, FName: e.target.value })
 							}
 							id="firstname"
-							class="input"
+							className="input"
 							type="text"
 							placeholder=""
 							required
 						/>
-						<div class="cut"></div>
-						<label for="firstname" class="placeholder">
+						<div className="cut"></div>
+						<label for="firstname" className="placeholder">
 							First name
 						</label>
 					</div>
-					<div class="input-container ic2">
+					<div className="input-container ic2">
 						<input
 							onChange={(e) =>
 								setformdata({ ...formdata, LName: e.target.value })
 							}
 							id="lastname"
-							class="input"
+							className="input"
 							type="text"
 							placeholder=""
 							required={true}
 						/>
-						<div class="cut"></div>
-						<label for="lastname" class="placeholder">
+						<div className="cut"></div>
+						<label for="lastname" className="placeholder">
 							Last name
 						</label>
 					</div>
-					<div class="input-container ic2">
+					<div className="input-container ic2">
 						<input
 							onChange={(e) =>
 								setformdata({ ...formdata, Gender: e.target.value })
 							}
 							id="gender"
-							class="input"
+							className="input"
 							type="text"
 							placeholder=""
 							required={true}
 						/>
-						<div class="cut"></div>
-						<label for="gender" class="placeholder">
+						<div className="cut"></div>
+						<label for="gender" className="placeholder">
 							Gender
 						</label>
 					</div>
-					<div class="input-container ic2">
+					<div className="input-container ic2">
 						<input
 							onChange={(e) =>
 								setformdata({ ...formdata, Email: e.target.value })
 							}
 							id="email"
-							class="input"
+							className="input"
 							type="email"
 							placeholder=""
 						/>
-						<div class="cut cut-short"></div>
-						<label for="email" class="placeholder">
+						<div className="cut cut-short"></div>
+						<label for="email" className="placeholder">
 							Email
 						</label>
 					</div>
-					<div class="input-container ic2">
+					<div className="input-container ic2">
 						<input
 							min={0}
 							onChange={(e) =>
 								setformdata({ ...formdata, Age: e.target.value })
 							}
 							id="Age"
-							class="input"
+							className="input"
 							type="number"
 							placeholder=""
 							required
 						/>
-						<div class="cut "></div>
-						<label for="Age" class="placeholder">
+						<div className="cut "></div>
+						<label for="Age" className="placeholder">
 							Age
 						</label>
 					</div>
-					<div class="input-container ic2">
+					<div className="input-container ic2">
 						<input
 							maxLength={10}
 							onChange={(e) =>
 								setformdata({ ...formdata, Phone: e.target.value })
 							}
 							id="Phone"
-							class="input"
+							className="input"
 							type="tel"
 							placeholder=""
 							required
 						/>
-						<div class="cut cut-short"></div>
-						<label for="Phone" class="placeholder">
+						<div className="cut cut-short"></div>
+						<label for="Phone" className="placeholder">
 							Phone
 						</label>
 					</div>
-					<div class="input-container ic2">
+					<div className="input-container ic2">
 						<input
 							onChange={(e) =>
 								setformdata({ ...formdata, toh: e.target.value })
 							}
 							id="toh"
-							class="input"
+							className="input"
 							type="text"
 							placeholder=""
 							required
 						/>
-						<div class="cut" style={{ paddingRight: "90px" }}></div>
-						<label for="toh" class="placeholder">
+						<div className="cut" style={{ paddingRight: "90px" }}></div>
+						<label for="toh" className="placeholder">
 							Help Category
 						</label>
 					</div>
-					<div class="input-container ic2">
+					<div className="input-container ic2">
 						<input
 							onChange={(e) =>
 								setformdata({ ...formdata, Place: e.target.value })
 							}
 							id="Place"
-							class="input"
+							className="input"
 							type="text"
 							placeholder=""
 							required
 						/>
-						<div class="cut" style={{ paddingRight: "90px" }}></div>
-						<label for="Place" class="placeholder">
+						<div className="cut" style={{ paddingRight: "90px" }}></div>
+						<label for="Place" className="placeholder">
 							Place of Help
 						</label>
 					</div>
-					<div class="input-container ic2 mb-8">
+					<div className="input-container ic2 mb-8">
 						<input
 							id="text"
 							style={{ marginBottom: "10px" }}
-							class="input"
+							className="input"
 							defaultValue={loc}
 							type="text"
 							placeholder=""
 							required
 						/>
-						<div class="cut"></div>
-						<label for="email" class="placeholder">
+						<div className="cut"></div>
+						<label for="email" className="placeholder">
 							Location
 						</label>
 						<button
@@ -243,7 +243,7 @@ const Helpform = () => {
 							Locate Me
 						</button>
 					</div>
-					<button type="submit" class="submit">
+					<button type="submit" className="submit">
 						Submit
 					</button>
 				</form>

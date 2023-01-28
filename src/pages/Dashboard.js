@@ -173,22 +173,22 @@ const Dashboard = () => {
 
 	return (
 		<div className="bg-back">
-			<div class="flex">
+			<div className="flex">
 				<nav
-					class="nav__mobile flex-column flex-align-center"
+					className="nav__mobile flex-column flex-align-center"
 					style={{ background: "#131515" }}
 				>
-					<div class="nav__hamburger flex flex-align-center flex-column flex-justify-center mb-6">
-						<span class="hamburger-line"></span>
-						<span class="hamburger-line"></span>
-						<span class="hamburger-line"></span>
+					<div className="nav__hamburger flex flex-align-center flex-column flex-justify-center mb-6">
+						<span className="hamburger-line"></span>
+						<span className="hamburger-line"></span>
+						<span className="hamburger-line"></span>
 					</div>
 				</nav>
-				<nav class="nav flex flex-column" style={{ background: "#131515" }}>
-					<ul class="nav__menus flex flex-column mb-14">
+				<nav className="nav flex flex-column" style={{ background: "#131515" }}>
+					<ul className="nav__menus flex flex-column mb-14">
 						<span className="text-2xl font-bold ml-2 text-text">Astrum</span>
-						<li class="mb-3">
-							<a class="nav__menu flex flex-align-center">
+						<li className="mb-3">
+							<a className="nav__menu flex flex-align-center">
 								<svg
 									width="24"
 									height="24"
@@ -204,8 +204,8 @@ const Dashboard = () => {
 								Your Location {loc ? loc : "none"}
 							</a>
 						</li>
-						<li class="mt-8 mb-3">
-							<a class="nav__menu active flex flex-align-center">
+						<li className="mt-8 mb-3">
+							<a className="nav__menu active flex flex-align-center">
 								<svg
 									width="24"
 									height="24"
@@ -221,8 +221,8 @@ const Dashboard = () => {
 								Home
 							</a>
 						</li>
-						<li class="mb-3">
-							<Link to={"/statsUp"} class="nav__menu flex flex-align-center ">
+						<li className="mb-3">
+							<Link to={"/statsUp"} className="nav__menu flex flex-align-center ">
 								<svg
 									width="24"
 									height="24"
@@ -241,17 +241,17 @@ const Dashboard = () => {
 						<li className="mb-3">
 							<Link
 								to={"/createalert"}
-								class="nav__menu flex flex-align-center"
+								className="nav__menu flex flex-align-center"
 							>
 								<HiBellAlert size={30} />
 								Create Alert/Relief
 							</Link>
 						</li>
-						<li class="mb-3">
+						<li className="mb-3">
 							<a
 								href="https://donate.stripe.com/test_28o4gI1Dle9VdlS8ww"
 								target={"blank"}
-								class="nav__menu flex flex-align-center"
+								className="nav__menu flex flex-align-center"
 							>
 								<svg
 									width="27"
@@ -269,9 +269,9 @@ const Dashboard = () => {
 							</a>
 						</li>
 					</ul>
-					<ul class="nav__logouts flex flex-column flex-justify-between">
+					<ul className="nav__logouts flex flex-column flex-justify-between">
 						<li onClick={() => auth.signOut()}>
-							<a class="nav__logout flex flex-align-center">
+							<a className="nav__logout flex flex-align-center">
 								<svg
 									width="24"
 									height="24"
@@ -289,9 +289,9 @@ const Dashboard = () => {
 						</li>
 					</ul>
 				</nav>
-				<section class="section__main" style={{ background: "#131515" }}>
-					<div class="flex search mb-8">
-						<button class="bg-white search__button">
+				<section className="section__main" style={{ background: "#131515" }}>
+					<div className="flex search mb-8">
+						<button className="bg-white search__button">
 							<svg
 								width="24"
 								height="24"
@@ -310,35 +310,35 @@ const Dashboard = () => {
 						<input
 							type="text"
 							placeholder="Search anything"
-							class="search__input"
+							className="search__input"
 						/>
 					</div>
 					<div
-						class="bg-white banner w-full flex justify-center flex-col"
+						className="bg-white banner w-full flex justify-center flex-col"
 						style={{ height: "max-content" }}
 					>
 						<h2 className="text-red-600 font-semibold text-2xl mb-4">
 							Emergency Requests
 						</h2>
-						<table class="table-auto overflow-scroll w-100vw">
-							<thead class="">
+						<table className="table-auto overflow-scroll w-100vw">
+							<thead className="">
 								<tr>
 									<th>
-										<h3 class="text-black mx-6 my-3">Time</h3>
+										<h3 className="text-black mx-6 my-3">Time</h3>
 									</th>
 									<th>
-										<h3 class="text-black mx-6 my-3">Location</h3>
+										<h3 className="text-black mx-6 my-3">Location</h3>
 									</th>
 								</tr>
 							</thead>
 							<tbody>
 								{Emerdata.map((item, idx) => (
-									<tr class="">
+									<tr className="">
 										<th>
-											<h3 class="text-black mx-4 my-3">{item.Timestamp}</h3>
+											<h3 className="text-black mx-4 my-3">{item.Timestamp}</h3>
 										</th>
 										<th>
-											<h3 class="text-black mx-4 my-3">
+											<h3 className="text-black mx-4 my-3">
 												<Link
 													to={{
 														pathname: "/map/parameter-data",
@@ -354,106 +354,106 @@ const Dashboard = () => {
 							</tbody>
 						</table>
 					</div>
-					<h2 class="text-2xl mb-5 font-semibold text-text">Stats</h2>
-					<div class="portos">
-						<div class="flex flex-justify-between flex-align-center bg-white porto">
+					<h2 className="text-2xl mb-5 font-semibold text-text">Stats</h2>
+					<div className="portos">
+						<div className="flex flex-justify-between flex-align-center bg-white porto">
 							<img src={patient} alt="" />
-							<div class="mt-1">
-								<div class="flex flex-align-center flex-justify-between mb-2">
-									<p class="text-xl mr-4">
+							<div className="mt-1">
+								<div className="flex flex-align-center flex-justify-between mb-2">
+									<p className="text-xl mr-4">
 										<b>Injured</b>
-										<span class="text-gray-500 text-sm"></span>
+										<span className="text-gray-500 text-sm"></span>
 									</p>
-									<p class="text-xl">{Injured}</p>
+									<p className="text-xl">{Injured}</p>
 								</div>
-								<div class="flex flex-align-center flex-justify-between">
-									<small class="text-gray-500">last Updated {time}</small>
+								<div className="flex flex-align-center flex-justify-between">
+									<small className="text-gray-500">last Updated {time}</small>
 								</div>
 							</div>
 						</div>
-						<div class="flex flex-justify-between flex-align-center bg-white porto">
+						<div className="flex flex-justify-between flex-align-center bg-white porto">
 							<img src={grave} alt="" />
-							<div class="mt-1">
-								<div class="flex flex-align-center flex-justify-between mb-2">
-									<p class="text-xl mr-4">
+							<div className="mt-1">
+								<div className="flex flex-align-center flex-justify-between mb-2">
+									<p className="text-xl mr-4">
 										<b>Deaths</b>
-										<span class="text-gray-500 text-sm"></span>
+										<span className="text-gray-500 text-sm"></span>
 									</p>
-									<p class="text-xl">{Deaths}</p>
+									<p className="text-xl">{Deaths}</p>
 								</div>
-								<div class="flex flex-align-center flex-justify-between">
-									<small class="text-gray-500">last Updated {time}</small>
+								<div className="flex flex-align-center flex-justify-between">
+									<small className="text-gray-500">last Updated {time}</small>
 								</div>
 							</div>
 						</div>
-						<div class="flex flex-justify-between flex-align-center bg-white porto">
+						<div className="flex flex-justify-between flex-align-center bg-white porto">
 							<img src={emergency_call} alt="" />
-							<div class="mt-1">
-								<div class="flex flex-align-center flex-justify-between mb-2">
-									<p class="text-xl mr-4">
+							<div className="mt-1">
+								<div className="flex flex-align-center flex-justify-between mb-2">
+									<p className="text-xl mr-4">
 										<b>Urgent Calls</b>
-										<span class="text-gray-500 text-sm"></span>
+										<span className="text-gray-500 text-sm"></span>
 									</p>
-									<p class="text-xl">{Evacuated}</p>
+									<p className="text-xl">{Evacuated}</p>
 								</div>
-								<div class="flex flex-align-center flex-justify-between">
-									<small class="text-gray-500">last Update {time}</small>
+								<div className="flex flex-align-center flex-justify-between">
+									<small className="text-gray-500">last Update {time}</small>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<table class="table-auto overflow-scroll w-100vw">
-						<thead class=" ">
+					<table className="table-auto overflow-scroll w-100vw">
+						<thead className=" ">
 							<tr>
 								<th>
-									<h3 class="text-white mx-6 my-3">Name</h3>
+									<h3 className="text-white mx-6 my-3">Name</h3>
 								</th>
 								<th>
-									<h3 class="text-white mx-6 my-3">Gender</h3>
+									<h3 className="text-white mx-6 my-3">Gender</h3>
 								</th>
 								<th>
-									<h3 class="text-white mx-6 my-3">Problem type</h3>
+									<h3 className="text-white mx-6 my-3">Problem type</h3>
 								</th>
 								<th>
-									<h3 class="text-white mx-6 my-3">Phone</h3>
+									<h3 className="text-white mx-6 my-3">Phone</h3>
 								</th>
 								<th>
-									<h3 class="text-white mx-6 my-3">Location</h3>
+									<h3 className="text-white mx-6 my-3">Location</h3>
 								</th>
 								<th>
-									<h3 class="text-white mx-6 my-3">Evacuation status</h3>
+									<h3 className="text-white mx-6 my-3">Evacuation status</h3>
 								</th>
 								<th>
-									<h3 class="text-white mx-6 my-3">Change status</h3>
+									<h3 className="text-white mx-6 my-3">Change status</h3>
 								</th>
 								<th>
-									<h3 class="text-white mx-6 my-3">Chat</h3>
+									<h3 className="text-white mx-6 my-3">Chat</h3>
 								</th>
 							</tr>
 						</thead>
 						<tbody>
 							{data.map((item, idx) => (
-								<tr class="">
+								<tr className="">
 									<th>
 										<h3
-											class="text-white my-3"
+											className="text-white my-3"
 											onClick={() => handleEvacuated(item.id, item.Evacuated)}
 										>
 											{item.FName}
 										</h3>
 									</th>
 									<th>
-										<h3 class="text-white my-3">{item.Gender}</h3>
+										<h3 className="text-white my-3">{item.Gender}</h3>
 									</th>
 									<th>
-										<h3 class="text-white my-3">{item.toh}</h3>
+										<h3 className="text-white my-3">{item.toh}</h3>
 									</th>
 									<th>
-										<h3 class="text-white my-3">{item.Phone}</h3>
+										<h3 className="text-white my-3">{item.Phone}</h3>
 									</th>
 									<th>
-										<h3 class="text-white my-3">
+										<h3 className="text-white my-3">
 											<Link
 												to={{
 													pathname: "/map/parameter-data",
@@ -467,7 +467,7 @@ const Dashboard = () => {
 									<th>
 										<label
 											for="toggle"
-											class={`mx-4 my-3 text-md ${
+											className={`mx-4 my-3 text-md ${
 												item.Evacuated != false
 													? "text-green-500"
 													: "text-yellow-500"
@@ -478,18 +478,18 @@ const Dashboard = () => {
 										</label>
 									</th>
 									<th>
-										<div class="mx-4 my-3 relative  inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+										<div className="mx-4 my-3 relative  inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
 											<input
 												type="checkbox"
 												checked={item.Evacuated}
 												onClick={() => handleEvacuated(item.id, item.Evacuated)}
 												name="toggle"
 												id="toggle"
-												class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"
+												className="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"
 											/>
 											<label
 												for="toggle"
-												class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"
+												className="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"
 											></label>
 										</div>
 									</th>
@@ -509,11 +509,11 @@ const Dashboard = () => {
 						</tbody>
 					</table>
 				</section>
-				<section class="section__account" style={{ background: "#131515" }}>
-					<div class="flex flex-align-center flex-justify-between mb-8 option">
-						<div class="flex flex-align-center flex-justify-between">
+				<section className="section__account" style={{ background: "#131515" }}>
+					<div className="flex flex-align-center flex-justify-between mb-8 option">
+						<div className="flex flex-align-center flex-justify-between">
 							<img
-								class="profile__pic mr-2"
+								className="profile__pic mr-2"
 								src={
 									auth.currentUser?.photoURL != null
 										? auth.currentUser?.photoURL
@@ -523,38 +523,38 @@ const Dashboard = () => {
 								width="32"
 								height="32"
 							/>
-							<p class="text-bold mr-2 text-text">
+							<p className="text-bold mr-2 text-text">
 								{auth.currentUser?.displayName}
 							</p>
 						</div>
 					</div>
-					<h2 class="text-2xl mb-4 text-text font-semibold">
+					<h2 className="text-2xl mb-4 text-text font-semibold">
 						Total Donations Received
 					</h2>
-					<div class="card flex flex-align-center flex-justify-center flex-column mb-4">
+					<div className="card flex flex-align-center flex-justify-center flex-column mb-4">
 						{Donations.slice(2, 7).map((item, idx) => {
 							totaldona += item.donation_Amount;
 						})}
-						<h2 class="text-2xl text-white text-bold mb-2">₹{totaldona}</h2>
-						<p class="text-bold text-white flex flex-align-center">
+						<h2 className="text-2xl text-white text-bold mb-2">₹{totaldona}</h2>
+						<p className="text-bold text-white flex flex-align-center">
 							Last Updated {time}
 						</p>
 					</div>
 
-					<h2 class="text-2xl mt-6 mb-4 text-text font-semibold">
+					<h2 className="text-2xl mt-6 mb-4 text-text font-semibold">
 						Recent Donations
 					</h2>
-					<div class="transactions">
+					<div className="transactions">
 						{Donations.slice(2, 7).map((item, idx) => (
-							<div class="transaction flex flex-align-center flex-justify-between mb-4">
-								<div class="flex flex-align-center flex-justify-between">
+							<div className="transaction flex flex-align-center flex-justify-between mb-4">
+								<div className="flex flex-align-center flex-justify-between">
 									<svg
 										width="48"
 										height="48"
 										viewBox="20 20 48 48"
 										fill="none"
 										xmlns="http://www.w3.org/2000/svg"
-										class="mr-2"
+										className="mr-2"
 									>
 										<g filter="url(#filter0_d_1_55)">
 											<rect
@@ -612,13 +612,13 @@ const Dashboard = () => {
 										</defs>
 									</svg>
 									<div>
-										<p class="text-bold text-text">{item.donorName}</p>
-										<small class="text-bold text-gray-500">
+										<p className="text-bold text-text">{item.donorName}</p>
+										<small className="text-bold text-gray-500">
 											{item.residence}
 										</small>
 									</div>
 								</div>
-								<p class="text-bold text-success">+{item.donation_Amount}</p>
+								<p className="text-bold text-success">+{item.donation_Amount}</p>
 							</div>
 						))}
 					</div>

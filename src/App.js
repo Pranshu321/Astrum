@@ -51,7 +51,7 @@ function App() {
       const res = await axios.get(
         "https://eonet.gsfc.nasa.gov/api/v2.1/events?limit=100"
       );
-      console.log(res.data.events);
+      // console.log(res.data.events);
       let temp = [];
       temp = [];
       for (let i = 0; i < res.data.events.length; i++) {

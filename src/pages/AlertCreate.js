@@ -103,32 +103,32 @@ const AlertCreate = () => {
 
             </div> */}
 			<div className="forms" style={{ height: "100%" }}>
-				<form onSubmit={sendData} class="form my-10">
-					<div class="title">Publish Alert / Relief</div>
-					<div class="subtitle">Let everyone know whats you are doing?</div>
-					<div class="input-container ic1">
+				<form onSubmit={sendData} className="form my-10">
+					<div className="title">Publish Alert / Relief</div>
+					<div className="subtitle">Let everyone know whats you are doing?</div>
+					<div className="input-container ic1">
 						<input
 							onChange={(e) =>
 								setformdata({ ...formdata, title: e.target.value })
 							}
 							id="firstname"
-							class="input"
+							className="input"
 							type="text"
 							placeholder=""
 							required
 						/>
-						<div class="cut"></div>
-						<label for="firstname" class="placeholder">
+						<div className="cut"></div>
+						<label for="firstname" className="placeholder">
 							Title
 						</label>
 					</div>
-					<div class="input-container ic1">
+					<div className="input-container ic1">
 						<textarea
 							onChange={(e) =>
 								setformdata({ ...formdata, desc: e.target.value })
 							}
 							id="firstname"
-							class="input"
+							className="input"
 							style={{ padding: "14px" }}
 							type="text"
 							placeholder=""
@@ -136,21 +136,21 @@ const AlertCreate = () => {
 							cols={3}
 							required
 						/>
-						<div class="cut"></div>
-						<label for="firstname" class="placeholder">
+						<div className="cut"></div>
+						<label for="firstname" className="placeholder">
 							Description
 						</label>
 					</div>
-					<div class="input-container outline-none">
+					<div className="input-container outline-none">
 						<label
 							for="countries"
-							class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+							className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
 						>
 							Select an option
 						</label>
 						<select
 							id="countries"
-							class="text-white border-none text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3"
+							className="text-white border-none text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3"
 							style={{ background: "#303245" }}
 							onChange={(e) =>
 								setformdata({ ...formdata, type: e.target.value })
@@ -168,53 +168,53 @@ const AlertCreate = () => {
 							</option>
 						</select>
 					</div>
-					<div class="input-container ic1">
+					<div className="input-container ic1">
 						<input
 							onChange={(e) =>
 								setformdata({ ...formdata, city: e.target.value })
 							}
 							id="firstname"
-							class="input"
+							className="input"
 							type="text"
 							placeholder=""
 							required
 						/>
-						<div class="cut"></div>
-						<label for="firstname" class="placeholder">
+						<div className="cut"></div>
+						<label for="firstname" className="placeholder">
 							city
 						</label>
 					</div>
-					<div class="input-container ic1">
+					<div className="input-container ic1">
 						<input
 							onChange={(e) =>
 								setformdata({ ...formdata, longi: e.target.value })
 							}
 							id="firstname"
-							class="input"
+							className="input"
 							type="text"
 							value={long}
 							placeholder=""
 							required
 						/>
-						<div class="cut"></div>
-						<label for="firstname" class="placeholder">
+						<div className="cut"></div>
+						<label for="firstname" className="placeholder">
 							longitude
 						</label>
 					</div>
-					<div class="input-container ic1">
+					<div className="input-container ic1">
 						<input
 							onChange={(e) =>
 								setformdata({ ...formdata, latitude: e.target.value })
 							}
 							id="firstname"
-							class="input"
+							className="input"
 							type="text"
 							value={lati}
 							placeholder=""
 							required
 						/>
-						<div class="cut"></div>
-						<label for="firstname" class="placeholder">
+						<div className="cut"></div>
+						<label for="firstname" className="placeholder">
 							latitude
 						</label>
 					</div>
@@ -236,7 +236,7 @@ const AlertCreate = () => {
 							</a>
 						</p>
 					</div> */}
-					<button type="submit" class="submit">
+					<button type="submit" className="submit">
 						Submit
 					</button>
 				</form>

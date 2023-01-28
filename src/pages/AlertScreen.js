@@ -35,7 +35,7 @@ const AlertScreen = () => {
 								<input
 									type="search"
 									id="default-search"
-									class="block w-full p-4 pl-10 text-base text-black font-semibold border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
+									className="block w-full p-4 pl-10 text-base text-black font-semibold border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
 									placeholder="Search Alerts , Relief and Info keywords"
 									onChange={(e) => setfilter(e.target.value)}
 									required

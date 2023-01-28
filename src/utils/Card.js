@@ -4,7 +4,7 @@ import { AiFillHeart, AiFillAlert, AiFillInfoCircle } from "react-icons/ai";
 const Card = ({ title, desc, link, date, time, type }) => {
 	return (
 		<div>
-			<div class="w-64 p-6 bg-white border flex flex-col justify-center items-center border-gray-200 rounded-lg shadow-xl h-44">
+			<div className="w-64 p-6 bg-white border flex flex-col justify-center items-center border-gray-200 rounded-lg shadow-xl h-44">
 				<div className="flex flex-col justify-center items-center gap-2">
 					{type !== "alert" && type !== "info" ? (
 						<AiFillHeart size={40} color="#4BB543" />
@@ -14,17 +14,17 @@ const Card = ({ title, desc, link, date, time, type }) => {
 						<AiFillInfoCircle size={40} color="#F1D12F" />
 					)}
 					<a href="#">
-						<h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
+						<h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
 							{title}
 						</h5>
 					</a>
 				</div>
-				<p class="mb-3 font-normal text-gray-500 dark:text-gray-400 text-center">{desc}</p>
-				<p class="inline-flex items-center text-gray-400">
+				<p className="mb-3 font-normal text-gray-500 dark:text-gray-400 text-center">{desc}</p>
+				<p className="inline-flex items-center text-gray-400">
 					{date} {time}
 					<a href={link} className="text-blue-600" target={"_blank"}>
 						<svg
-							class="w-5 h-5 ml-2"
+							className="w-5 h-5 ml-2"
 							fill="currentColor"
 							viewBox="0 0 20 20"
 							xmlns="http://www.w3.org/2000/svg"
