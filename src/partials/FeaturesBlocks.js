@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function FeaturesBlocks() {
 	return (
@@ -62,7 +63,8 @@ function FeaturesBlocks() {
 								Initial Contact
 							</h4>
 							<p className="text-gray-600 text-center">
-								Needy one can contact us via form and also with onclick help.
+								Needy one can contact us via form and also with onclick
+								help.
 							</p>
 						</div>
 
@@ -80,7 +82,10 @@ function FeaturesBlocks() {
 										height="64"
 										rx="32"
 									/>
-									<g strokeWidth="2" transform="translate(19.429 20.571)">
+									<g
+										strokeWidth="2"
+										transform="translate(19.429 20.571)"
+									>
 										<circle
 											className="stroke-current text-black"
 											strokeLinecap="square"
@@ -103,8 +108,8 @@ function FeaturesBlocks() {
 								Hotspot Finding
 							</h4>
 							<p className="text-gray-600 text-center">
-								As the data provided from the organizations and people we
-								identify the hotspot.
+								As the data provided from the organizations and people
+								we identify the hotspot.
 							</p>
 						</div>
 
@@ -138,8 +143,9 @@ function FeaturesBlocks() {
 								Level Broadcast
 							</h4>
 							<p className="text-gray-600 text-center">
-								The bridge with the authorites and sufferers as providing they
-								can broadcast the infomation about alerts and relief.
+								The bridge with the authorites and sufferers as
+								providing they can broadcast the infomation about alerts
+								and relief.
 							</p>
 						</div>
 
@@ -157,7 +163,10 @@ function FeaturesBlocks() {
 										height="64"
 										rx="32"
 									/>
-									<g transform="translate(22.857 19.429)" strokeWidth="2">
+									<g
+										transform="translate(22.857 19.429)"
+										strokeWidth="2"
+									>
 										<path
 											className="stroke-current text-black"
 											strokeLinecap="square"
@@ -186,8 +195,8 @@ function FeaturesBlocks() {
 								Statistics
 							</h4>
 							<p className="text-gray-600 text-center">
-								We also provide the stats to government authorites about the
-								injured , evacuations etc.
+								We also provide the stats to government authorites about
+								the injured , evacuations etc.
 							</p>
 						</div>
 
@@ -230,14 +239,14 @@ function FeaturesBlocks() {
 								Donation
 							</h4>
 							<p className="text-gray-600 text-center">
-								The ones who want to donate to needy ones and help to overcome
-								the loss caused by disaster.
+								The ones who want to donate to needy ones and help to
+								overcome the loss caused by disaster.
 							</p>
 						</div>
 						<div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
 							<svg
-                id="changeColor"
-                className="w-[4.5rem] h-[4.5rem] p-1 -mt-1 mb-2"
+								id="changeColor"
+								className="w-[4.5rem] h-[4.5rem] p-1 -mt-1 mb-2"
 								fill="#DC7633"
 								xmlns="http://www.w3.org/2000/svg"
 								xlink="http://www.w3.org/1999/xlink"
@@ -288,10 +297,88 @@ function FeaturesBlocks() {
 								Live Chat
 							</h4>
 							<p className="text-gray-600 text-center">
-								Real-time communication between authorities and suffering
-								people, enabling them to respond quickly and effectively.
+								Real-time communication between authorities and
+								suffering people, enabling them to respond quickly and
+								effectively.
 							</p>
 						</div>
+					</div>
+				</div>
+			</div>
+
+			{/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+
+			<div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+				<div className="py-12 md:py-20">
+					{/* Section header */}
+					<div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+						<h2 className="h2 mb-4 text-text">Astra - FAQ bot</h2>
+						<p className="text-xl text-gray-600">
+							Chat with our FAQ bot "Astra" to get answers to your
+							questions.
+						</p>
+					</div>
+
+					{/* Items */}
+					<div className="max-w-sm mx-auto grid gap-6 md:grid-cols-1 lg:grid-cols-1 items-center md:max-w-2xl lg:max-w-none">
+						{/* 1st item */}
+					<Link to="/astra">
+						<div className="relative flex flex-col justify-center items-center p-6 bg-white rounded shadow-xl">
+							<svg
+								id="changeColor"
+								className="w-[4.5rem] h-[4.5rem] p-1 -mt-1 mb-2"
+								fill="#DC7633"
+								xmlns="http://www.w3.org/2000/svg"
+								xlink="http://www.w3.org/1999/xlink"
+								width="64"
+								zoomAndPan="magnify"
+								viewBox="0 0 375 374.9999"
+								height="64"
+								preserveAspectRatio="xMidYMid meet"
+								version="1.0"
+							>
+								<defs>
+									<path
+										id="pathAttribute"
+										d="M 7.09375 7.09375 L 367.84375 7.09375 L 367.84375 367.84375 L 7.09375 367.84375 Z M 7.09375 7.09375 "
+										fill="#d4e162"
+									></path>
+								</defs>
+								<g>
+									<path
+										id="pathAttribute"
+										d="M 187.46875 7.09375 C 87.851562 7.09375 7.09375 87.851562 7.09375 187.46875 C 7.09375 287.085938 87.851562 367.84375 187.46875 367.84375 C 287.085938 367.84375 367.84375 287.085938 367.84375 187.46875 C 367.84375 87.851562 287.085938 7.09375 187.46875 7.09375 "
+										fill-opacity="1"
+										fill-rule="nonzero"
+										fill="#d4e162"
+									></path>
+								</g>
+								<g id="inner-icon" transform="translate(85, 75)">
+									{" "}
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="199.8"
+										height="199.8"
+										fill="currentColor"
+										class="bi bi-chat"
+										viewBox="0 0 16 16"
+										id="IconChangeColor"
+									>
+										{" "}
+										<path
+											d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"
+											id="mainIconPathAttribute"
+											fill="#000000"
+										></path>{" "}
+									</svg>{" "}
+								</g>
+							</svg>
+							<h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+								Chat Now
+							</h4>
+						</div>
+					</ Link>
+						
 					</div>
 				</div>
 			</div>
