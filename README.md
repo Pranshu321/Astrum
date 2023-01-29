@@ -144,7 +144,7 @@ Users can make donations through a variety of payment methods, including credit 
 
 ![image](https://user-images.githubusercontent.com/86917304/201508333-c7485405-ef3c-4850-a4b2-177f78e5d498.png)
 
-## Live tweets on Disater
+## Live tweets on Disaster
 
 Users can check for live tweets on recent disasters
 ![twitter]()
