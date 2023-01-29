@@ -7,7 +7,6 @@ const Tweet = () => {
 		"1619564729823006721",
 		"1619564661560729600",
 		"1619563719150960640",
-		"1619565726104424449",
 	]);
 
 	const Fetching = async () => {
@@ -38,7 +37,7 @@ const Tweet = () => {
 				</p>
 			</div>
 			<div className="flex flex-wrap justify-center gap-10">
-				{data.slice(8, 14).map((item) => (
+				{data.map((item) => (
 					<div style={{ width: "300px" }}>
 						<TweetEmbed
 							tweetId={item}

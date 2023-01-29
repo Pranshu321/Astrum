@@ -237,6 +237,7 @@ const Helpform = () => {
 							Location
 						</label>
 						<button
+							type="button"
 							onClick={getLocation}
 							className="btn-sm mr-3 bg-yell font-semibold text-back hover:text-gray-900 px-5 flex items-center transition duration-150 ease-in-out"
 						>
