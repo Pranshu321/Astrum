@@ -25,6 +25,7 @@ import NasaMap from "./pages/nasaMaps";
 import axios from "axios";
 import AlertCreate from "./pages/AlertCreate";
 import AlertScreen from "./pages/AlertScreen";
+import Astra from "./partials/Astra";
 
 function App() {
   const location = useLocation();
@@ -109,6 +110,9 @@ function App() {
         </Route>
         <Route path="/nasamap">
           <NasaMap eventData={eventData} />
+        </Route>
+        <Route path="/astra">
+          <Astra />
         </Route>
       </Switch>
     </>
