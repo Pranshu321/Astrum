@@ -19,10 +19,8 @@ const Dashboard = () => {
 	const [Deaths, setDeaths] = useState(0);
 	const [Evacuated, setEvacuted] = useState(0);
 	const [time, settime] = useState("");
-	const [total, settotal] = useState(0);
 	const [data, setdata] = useState([{}]);
 	const [Emerdata, setEmerdata] = useState([{}]);
-	const [email, setemail] = useState("");
 	let totaldona = 0;
 	function sendMail(uniq, user, email) {
 		emailjs
@@ -222,7 +220,10 @@ const Dashboard = () => {
 							</a>
 						</li>
 						<li className="mb-3">
-							<Link to={"/statsUp"} className="nav__menu flex flex-align-center ">
+							<Link
+								to={"/statsUp"}
+								className="nav__menu flex flex-align-center "
+							>
 								<svg
 									width="24"
 									height="24"
@@ -618,7 +619,9 @@ const Dashboard = () => {
 										</small>
 									</div>
 								</div>
-								<p className="text-bold text-success">+{item.donation_Amount}</p>
+								<p className="text-bold text-success">
+									+{item.donation_Amount}
+								</p>
 							</div>
 						))}
 					</div>

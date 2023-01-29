@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/03b9c630-7502-4339-aaa8-02711a254c11/deploy-status)](https://app.netlify.com/sites/astrum-hackit/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/03b9c630-7502-4339-aaa8-02711a254c11/deploy-status)](https://astrum-hackit.netlify.app)
 
 </div>
 
@@ -12,12 +12,12 @@
     <img src="https://user-images.githubusercontent.com/73426684/201504342-08cffce2-5087-4a69-b0ec-b9fa0ad6f49b.png" width="100px" alt="">
   </a>
 
-  <h3 align="center">Astrum - Saves Lives</h3>
+  <h3 align="center">Astrum - Advanced Systems for Tracking and Responding to Urban Misery </h3>
 
   <p align="center">
     <a href="https://astrum-hackit.netlify.app/" target="blank">Live Demo</a> |
-    <a href="https://github.com/Pranshu321/Astrum_Hackit/issues" target="blank">Report a Bug</a> |
-    <a href="https://github.com/Pranshu321/Astrum_Hackit/issues" target="blank">Suggest a Feature</a>
+    <a href="https://github.com/Pranshu321/Astrum/issues" target="blank">Report a Bug</a> |
+    <a href="https://github.com/Pranshu321/Astrum/issues" target="blank">Suggest a Feature</a>
   </p>
 </div>
 
