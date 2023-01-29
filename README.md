@@ -139,14 +139,19 @@ Users can access this feature through the web-based interface, where they can vi
 
 ![image](https://user-images.githubusercontent.com/86917304/201508273-9e9969ba-4dcf-449a-8514-f6f613cc843c.png)
 
-## Donation for needy one
+## Donation 
 Users can make donations through a variety of payment methods, including credit card, debit card, and online banking. They can also choose to make donations to specific disaster relief efforts or organizations.
 
 ![image](https://user-images.githubusercontent.com/86917304/201508333-c7485405-ef3c-4850-a4b2-177f78e5d498.png)
 
+## Live tweets on Disater
+
+Users can check for live tweets on recent disasters
+![twitter]()
+
 # Features for Needy ones
 
-## Need Help form
+## Help form
 
 "Help Form" feature, which allows users to request assistance and provide information about their needs during a disaster event. This feature can be accessed through the mobile application (PWA) or web-based interface and is designed to be user-friendly and easy to navigate.
 
