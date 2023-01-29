@@ -15,7 +15,7 @@
   <h3 align="center">Astrum - Advanced Systems for Tracking and Responding to Urban Misery </h3>
 
   <p align="center">
-    <a href="https://astrum-hackit.netlify.app/" target="blank">Live Demo</a> |
+    <a href="https://astrum-buggies.netlify.app/" target="blank">Live Demo</a> |
     <a href="https://github.com/Pranshu321/Astrum/issues" target="blank">Report a Bug</a> |
     <a href="https://github.com/Pranshu321/Astrum/issues" target="blank">Suggest a Feature</a>
   </p>
@@ -206,7 +206,7 @@ Member 2 - [Mohammad Sami](https://github.com/MSamiDev)
 
 Member 3 - [Sreetama Ghosh Hazra](https://github.com/Sreetama2001)
 
-Web APP : [Astrum](https://astrum-hackit.netlify.app/)
+Web APP : [Astrum](https://astrum-buggies.netlify.app/)
 
 Video Link : [Demo Video](https://www.loom.com/share/07374277cc9242ab89b023517e9a3c8c)
 
