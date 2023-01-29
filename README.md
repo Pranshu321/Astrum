@@ -66,13 +66,17 @@ We have a built Disaster Risk Management System for better management and collab
 
 3. **Database and storage**: `Firestore` , `MonngoDb`
 
-4. **Services**            : `Realm-Services` , `Google maps API ` , `Nasa API` , `Reverse-Geolocation`
-
+4. **Services**            : `Realm-Services` , `Google maps API ` , `Nasa API` , `Reverse-Geolocation` , `Twitter Api` 
+   
 5. **Deployment**          : `Netlify`
+  
+6. **ML frameworks**       : `Sk-learn` , `Numpy` , `Tensorflow` , `Pandas` , `Bert-model`
+  
+7. **Model Backend**       : `FastAPi` , `Tweepy`
 
-6. **Email Service**       : `Emailjs`
+8. **Email Service**       : `Emailjs`
 
-7. **Payment Service**     : `Stripe`
+9.  **Payment Service**     : `Stripe`
 
 
 <!-- GETTING STARTED -->

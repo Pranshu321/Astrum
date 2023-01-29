@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+tensorflow = "*"
+tensorflow-text = "*"
+numpy = "*"
+pandas = "*"
+tweepy = "*"
+pymongo = "*"
+dnspython = "*"
+asyncio = "*"
+fastapi = "*"
+uvicorn = "*"
+aiohttp = "*"
+async-lru = "*"
+oauthlib = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
