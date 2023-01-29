@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/03b9c630-7502-4339-aaa8-02711a254c11/deploy-status)](https://astrum-hackit.netlify.app)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2c63cd83-0a5f-478e-8131-649d6a4cff31/deploy-status)](https://astrum-buggies.netlify.app/)
 
 </div>
 
