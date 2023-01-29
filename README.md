@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/03b9c630-7502-4339-aaa8-02711a254c11/deploy-status)](https://astrum-hackit.netlify.app)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2c63cd83-0a5f-478e-8131-649d6a4cff31/deploy-status)](https://astrum-buggies.netlify.app/)
 
 </div>
 
@@ -144,10 +144,17 @@ Users can make donations through a variety of payment methods, including credit 
 
 ![image](https://user-images.githubusercontent.com/86917304/201508333-c7485405-ef3c-4850-a4b2-177f78e5d498.png)
 
+## FAQ bot
+This is bot which is reponsible for providing the genuine preventive do's and dont's to citizen.
+
+![image](https://www.linkpicture.com/q/WhatsApp-Image-2023-01-29-at-1.12.40-PM.jpeg)
+
 ## Live tweets on Disaster
 
 Users can check for live tweets on recent disasters
-![twitter]()
+
+![image](https://user-images.githubusercontent.com/86917304/215312235-3019fc2a-1fe9-4d8e-927c-5b4a8c3ace21.png)
+
 
 # Features for Needy ones
 
