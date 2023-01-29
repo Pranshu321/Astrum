@@ -63,7 +63,7 @@ class MyStreamer(AsyncStreamingClient):
         await asyncio.sleep(80)
         df = self._preprocess_data()
         data =self.predict(df)
-        # self.insert_into_db(data)
+        self.insert_into_db(data)
         print(" Reconnecting with the stream ")
 
     def _preprocess_data(self):
@@ -122,7 +122,7 @@ async def stream_tweets():
     # df =await streamer.preprocess_data()
     # print(df)
 
-
+##  change this to FAST API server ###
 async def main():
     await stream_tweets()
 
