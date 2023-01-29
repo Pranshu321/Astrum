@@ -1,4 +1,4 @@
-<h1 align="center" size="30px">Astrum - Disaster Risk Reduction</h1> 
+<h1 align="center" size="30px">Astrum - Saves Lives</h1> 
 
 <div align="center">
 
