@@ -158,6 +158,11 @@ Users can check for live tweets on recent disasters
 
 # Features for Needy ones
 
+## Broadcast room
+A broadcast room is a feature in ASTRUM that provides users with up-to-date information and alerts related to natural disasters and relief efforts. In the broadcast room, users can access information and updates from government agencies, first responders, and other organizations involved in disaster response and relief efforts.
+
+![image](https://www.linkpicture.com/q/WhatsApp-Image-2023-01-29-at-1.35.12-PM.jpeg)
+
 ## Help form
 
 "Help Form" feature, which allows users to request assistance and provide information about their needs during a disaster event. This feature can be accessed through the mobile application (PWA) or web-based interface and is designed to be user-friendly and easy to navigate.
