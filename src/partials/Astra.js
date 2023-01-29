@@ -4,9 +4,9 @@ import Header from "./Header";
 const Astra = () => {
 	const [display, setDisplay] = useState(false);
 	return (
-		<div className=" h-screen w-screen bg-back">
+		<div className="h-screen w-screen bg-back">
 			<Header />
-			<div className=" flex justify-center items-center h-full flex-col ">
+			<div className="py-20 flex justify-center items-center h-full flex-col ">
 				
 					<iframe
 						allow="microphone;"
