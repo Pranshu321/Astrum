@@ -392,7 +392,7 @@ const Dashboard = () => {
 							<div className="mt-1">
 								<div className="flex flex-align-center flex-justify-between mb-2">
 									<p className="text-xl mr-4">
-										<b>Urgent Calls</b>
+										<b>Evacuated</b>
 										<span className="text-gray-500 text-sm"></span>
 									</p>
 									<p className="text-xl">{Evacuated}</p>
